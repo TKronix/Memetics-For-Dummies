@@ -1,794 +1,1343 @@
 [
   {
-    "Icon": "",
-    "Name": "Gravel and Log On-the-Go",
-    "Type": "Prospector",
-    "Category": "Gathering",
-    "Specialization": "New Formula: Gravel and Log On-the-Go",
-    "Effects": "When in your backpack, it reduces the weight of Logs, Gravels, and Ores you carry by 40% - 80%",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Pickaxe: Moonlight Mining",
-    "Type": "Prospector",
-    "Category": "Gathering",
-    "Specialization": "Improved Formula: Pickaxe",
-    "Effects": "When using the Pickaxe for Mining, increase the yield of Copper, Tin, Iron, Aluminum, and Tungsten Ore by 25%. Effect doubles at night (21:00 - 06:00)",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Pickaxe: Forest Foe",
-    "Type": "Prospector",
-    "Category": "Gathering",
-    "Specialization": "Improved Formula: Pickaxe",
-    "Effects": "Pickaxe Durability is doubled. +30% yield when logging with the Pickaxe, and gain 150% of the resources when you completely destroy a tree",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Super Refinery",
-    "Type": "Smelter",
-    "Category": "Gathering",
-    "Specialization": "New Facility: Super Refinery",
-    "Effects": "Transform Acid into Portable Mixed Fuel more efficiently",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Furnace: Precision Refining",
-    "Type": "Smelter",
-    "Category": "Gathering",
-    "Specialization": "Facility Boost: Furnace",
-    "Effects": "Resource Consumption -30%, and Smelting Time -30% when smelting Copper, Bronze, Steel, Aluminum, and Tungsten Ingots using a Furnace or Electric Furnace",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Disassembly Bench: Careful Disassembly",
-    "Type": "Smelter",
-    "Category": "Gathering",
-    "Specialization": "Facility Boost: Disassembly Bench",
-    "Effects": "Yield +30% when disassembling Parts, Fabrics, and Plastic",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Jump Booster",
-    "Type": "Machinist",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Jump Booster",
-    "Effects": "Use to gain the double jump ability for 30 seconds. Can use up to 5 times",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Electronics Grabber",
-    "Type": "Machinist",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Electronics Grabber",
-    "Effects": "When in your backpack, there is a small to medium chance to receive additional electronic modules when opening a Storage Crate",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Disassembly Bench: Electronic Recycling",
-    "Type": "Machinist",
-    "Category": "Crafting",
-    "Specialization": "Facility Boost: Disassembly Bench",
-    "Effects": "Yield +50% for Metal Scrap and Electronic Parts",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Explosive Sack",
-    "Type": "Demolition Expert",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Explosive Sack",
-    "Effects": "When in your backpack, there is a 30% - 60% chance to salvage Explosive Compound after using High-Explosive Grenades, Shrapnel Grenades, and Simple Explosives. There is a 30% - 60% chance to salvage Sulfur after using Molotov Cocktails and Thermite Grenades",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Explosive On-the-Go",
-    "Type": "Demolition Expert",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Explosive On-the-Go",
-    "Effects": "When in your backpack, reduce the weight of Grenades, Molotov Cocktails, High Explosives, Shrapnel Grenades, Thermite Grenades, Rocket Launcher Rockets, and Grenade Launcher Grenades by 30% - 60%. After using a throwable, increase Sprint Speed by 20% for 2s",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Throwing Dagger: Bullseye",
-    "Type": "Demolition Expert",
-    "Category": "Crafting",
-    "Specialization": "Improved Formula: Throwing Dagger",
-    "Effects": "Throwing Dagger +30% DMG. After killing an enemy with a Throwing Dagger, the next throw +100% DMG",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Backpack Expansion",
-    "Type": "Master Craftsman",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Backpack Expansion",
-    "Effects": "When in your backpack, increase Max Load by 40 - 80",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Supplies Workbench: Ammo Factory",
-    "Type": "Master Craftsman",
-    "Category": "Crafting",
-    "Specialization": "Facility Boost: Supplies Workbench",
-    "Effects": "Supplies Workbench Crafting Output +50% when crafting regular Ammunition",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Gear Workbench: Customization",
-    "Type": "Master Craftsman",
-    "Category": "Crafting",
-    "Specialization": "Gear Workbench",
-    "Effects": "Weapons and Armor crafted using the Gear Workbench have +30% Max Durability",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Harvesting Sickle",
-    "Type": "Child of the Earth",
-    "Category": "Management",
-    "Specialization": "New Formula: Harvesting Sickle",
-    "Effects": "When in your backpack, there is a 20% - 40% chance to double the yield when gathering in the wilderness",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Compost Bin",
-    "Type": "Child of the Earth",
-    "Category": "Management",
-    "Specialization": "New Formula: Compost Bin",
-    "Effects": "When in your backpack, if there is Spoiled Food in your Backpack, 1 - 3 Spoiled Foods will be consumed every 10 - 5 minutes, and be turned into Mushrooms or random Fertilizer",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Gardening Gloves",
-    "Type": "Child of the Earth",
-    "Category": "Management",
-    "Specialization": "New Formula: Gardening Gloves",
-    "Effects": "When in your backpack, there is a 6% - 12% chance to double the seeds when acquiring plant seeds",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Activated Carbon Filter",
-    "Type": "Hydro Engineer",
-    "Category": "Management",
-    "Specialization": "New Formula: Activated Carbon Filter",
-    "Effects": "When in your backpack, when gathering water with a flask, there is a 30% chance to receive Boiled or Pure Water",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Portable Rainwater Collection System",
-    "Type": "Hydro Engineer",
-    "Category": "Management",
-    "Specialization": "New Formula: Portable Rainwater Collection System",
-    "Effects": "When in your backpack, slowly recover Hydration, and a 30% - 60% chance to receive 1 Dirty Water, Pure Water, or Acid every minute when it rains",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Portable Diving Gear",
-    "Type": "Hydro Engineer",
-    "Category": "Management",
-    "Specialization": "New Forumula: Portable Diving Gear",
-    "Effects": "When in your backpack, increase Oxygen by 40% - 100% and Swimming Speed by 20% - 40% when dving",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Chef's Knife",
-    "Type": "Star Chef",
-    "Category": "Management",
-    "Specialization": "New Formula: Chef's Knife",
-    "Effects": "When in your backpack, Meat yield +1 when Field Dressing animals, with a 30% - 60% chance to yield additional byproducts",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Stove: Long-Term Storage",
-    "Type": "Star Chef",
-    "Category": "Management",
-    "Specialization": "Facility Boost: Stove",
-    "Effects": "Doubles the shelf life of Dishes you cook yourself",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Roasted & Dried: Low and Slow",
-    "Type": "Star Chef",
-    "Category": "Management",
-    "Specialization": "Improved Formula: Roasted",
-    "Effects": "Roasted and Dried Dishes now provide +15 Energy, and +10% Sanity",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Custom Storage Crate",
-    "Type": "Tinkerer",
-    "Category": "Building",
-    "Specialization": "New Facility: Custom Storage Crate",
-    "Effects": "A large Storage Crate with 64 item slots",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Wood Structures: Tough Plant",
-    "Type": "Tinkerer",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Wood Structures",
-    "Effects": "Structures built from wood gain the Tough Plant effect, and durability +150%",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Bed: A Place to Call Home",
-    "Type": "Tinkerer",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Bed",
-    "Effects": "Sleep for more then 10s to cure all disease and reduce Stamina depletion for the next 10 minutes",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Basic Defense: Battle-Hardened",
-    "Type": "Artillery Marshal",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Basic Defense",
-    "Effects": "Sandbags, Shelters, and High Fortifications gain the Battle-Hardened effect, Durability +100%. When your Territory exits combat, Durability recovers to 100%",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Flamethrower Trap: Scorching Blast",
-    "Type": "Artillery Marshal",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Flamethrower Trap",
-    "Effects": "Flamethrower Trap DMG +30%. When the Flamethrower Trap kills an enemy, an explosion is triggered, dealing AoE Blast DMG to all nearby units (1s cooldown)",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Robotics Facility: Skilled Mechanician",
-    "Type": "Artillery Marshal",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Robotics Facility",
-    "Effects": "Increase the Durability of Traps and Rifle Turret type facilities by 50%",
-    "Level": "5-15"
-  },
-  {
-    "Icon": "",
-    "Name": "Solar Drill",
-    "Type": "Prospector",
-    "Category": "Gathering",
-    "Specialization": "New Formula: Solar Drill",
-    "Effects": "The Solar Drill charges itself on sunny days. +15% - 40% yields of Copper, Tin, Iron, Aluminum, and Tungsten Ore",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Chainsaw: Chainsaw Horror Show",
-    "Type": "Prospector",
-    "Category": "Gathering",
-    "Specialization": "Improved Formula: Chainsaw",
-    "Effects": "Chainsaw Durability cap +50%, Attack Speed +30%, and Melee DMG +100%",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Electric Drill: Treasure Hunter",
-    "Type": "Prospector",
-    "Category": "Gathering",
-    "Specialization": "Improved Formula: Electric Drill",
-    "Effects": "+100% yield when mining for Gold, Silver, and Startrace Ore with an Electric Drill",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Oil Processing",
-    "Type": "Smelter",
-    "Category": "Gathering",
-    "Specialization": "New Formula: Stardust Source",
-    "Effects": "Turn Stardust Ore and Portable Mixed Fuel into Stardust Source using the Electric Furnace",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Precious Metal Refining",
-    "Type": "Smelter",
-    "Category": "Gathering",
-    "Specialization": "New Formula: Gold Ingot, Silver Ingot",
-    "Effects": "Smelt gold and silver ores into ingots using the electric furnace. Gold ingot can be sold for 12k energy links, silver sold for 6k energy links",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Electric Furnace: Efficiency Lover",
-    "Type": "Smelter",
-    "Category": "Gathering",
-    "Specialization": "Facility Boost: Electric Furnace",
-    "Effects": "Electric Furnace Power Consumption -50%, and Crafting Time -60%",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Portable Updraft Device",
-    "Type": "Machinist",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Portable Updraft Device",
-    "Effects": "Use to temporarily summon an updraft at the location for 30s. When inside the updraft, jump height is increased. Can use up to 10 times",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Combo Chipset",
-    "Type": "Machinist",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Combo Chipset",
-    "Effects": "Turn Electronic Parts, Metal Scrap, and Parts into the Combo Chipset using the Supplies Workbench. Can be sold for 12k energy links",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Portable MG Turret: Barrage of Bullets",
-    "Type": "Machinist",
-    "Category": "Crafting",
-    "Specialization": "Improved Formula: Portable MGTurret",
-    "Effects": "Firing the MG Turret can trigger the Bounce effect, increasing HP and DMG by 30%. The MG Turret is now a reusable item, with up to 5 uses max",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Sulfur Chemist",
-    "Type": "Demolition Expert",
-    "Category": "Crafting",
-    "Specialization": "Unlock New Formula: Sulfur Chemist",
-    "Effects": "Can use Sulfur and Energy Links at the Synthesis Bench to slowly produce Acid",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Explosive Throwables: Echo Blast",
-    "Type": "Demolition Expert",
-    "Category": "Crafting",
-    "Specialization": "Improved Formula: Explosive Throwables",
-    "Effects": "Increase the DMG of High-Explosive Grenades, Shrapnel Grenades, Molotov Cocktails, and Thermite DMG by 30%. The first target killed will trigger 1 extra explosion, dealing damage equal to 400% Psi Intensity",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Claymore Mine: Warrior's Resolve",
-    "Type": "Demolition Expert",
-    "Category": "Crafting",
-    "Specialization": "Improved Formula: Claymore Mine",
-    "Effects": "Claymore Mine deals an additional 4000 + 400% Psi Intensity damage and increases Max HP by 400% Psi Intensity",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Synthesis Bench: Recycle & Reuse",
-    "Type": "Master Craftsman",
-    "Category": "Crafting",
-    "Specialization": "Facility Boost: Synthesis Bench",
-    "Effects": "When crafting Drones, Turrets, Stardust Shields, Spectrum Generators, and Projection Generators, increase their use count by 1",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Supplies Workbench: Healing Boost",
-    "Type": "Master Craftsman",
-    "Category": "Crafting",
-    "Specialization": "Facility Boost: Supplies Workbench",
-    "Effects": "HP Recovery +10% when crafting Activators, and Output +1",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Adrenaline Shot: Phoenix",
-    "Type": "Master Craftsman",
-    "Category": "Crafting",
-    "Specialization": "Improved Formula: Adrenaline Shot",
-    "Effects": "Take less DMG for the first 10s after respawning, and slowly recover HP",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Improved Compound Fertilizer",
-    "Type": "Child of the Earth",
-    "Category": "Management",
-    "Specialization": "New Formula: Improved Compound Fertilizer",
-    "Effects": "Crop fertilizer that can significantly enhance crop Mutation Rate and Yield, but will also slow down Growth",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Solar Generator: Photon Power",
-    "Type": "Sparksmith",
-    "Category": "Management",
-    "Specialization": "Facility Boost: Solar Generator",
-    "Effects": "Solar Generator Power Output +10w",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Biomass Generator: Sustained Output",
-    "Type": "Sparksmith",
-    "Category": "Management",
-    "Specialization": "Facility Boost: Biomass Generator",
-    "Effects": "Increase Biomass Generator's power output by 5w, and fuel duration by 150%",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Generator: Electrical Expert",
-    "Type": "Sparksmith",
-    "Category": "Management",
-    "Specialization": "Facility Boost: Generator",
-    "Effects": "Maximum Number of Generators +1 ,and +2w Power Output",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Stardust Water Pump",
-    "Type": "Hydro Engineer",
-    "Category": "Management",
-    "Specialization": "New Facility: Stardust Water Pump",
-    "Effects": "A special Water Pump that can extract Stardust Source from polluted soil when supplied with enough power",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Portable Fridge",
-    "Type": "Star Chef",
-    "Category": "Management",
-    "Specialization": "New Formula: Portable Fridge",
-    "Effects": "When in your backpack, reduce the spoilage speed of Food in your backpack by 70% - 90%",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Iced Treat: Brain Freeze",
-    "Type": "Star Chef",
-    "Category": "Management",
-    "Specialization": "Improved Formula: Iced Treat",
-    "Effects": "Iced Treat Effect Duration +200%, and Potency +30%",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Canned Goods: Mini Canner",
-    "Type": "Star Chef",
-    "Category": "Management",
-    "Specialization": "Improved Formula: Canned Goods",
-    "Effects": "+1 Yield when crafting Canned Goods",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Stone Structures: Intense Defense",
-    "Type": "Tinkerer",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Stone Structures",
-    "Effects": "Structures built from stone gain the Intense Defense effect: Durability +100%,  and the maximum number of Structural items that can be placed in your Territory at any one time +100",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Furnace: Sintering",
-    "Type": "Tinkerer",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Furnace",
-    "Effects": "Sintered Brick and Glass Crafting Time -50%, Yield +100%",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Updraft Cannon: Gravity Lite",
-    "Type": "Tinkerer",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Updraft Cannon",
-    "Effects": "Gravity is reduced around the Updraft Cannon, and Movement Speed is increased for 5s",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Biomass Missile: Ample Munition",
-    "Type": "Artillery Marshal",
-    "Category": "Building",
-    "Specialization": "Improved Formula: Biomass Missile",
-    "Effects": "Plasma Missiles -80% Weight, and +2 Crafting Yield",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Gravitational Grip: Bonds of Guidance",
-    "Type": "Artillery Marshal",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Gravitational Grip",
-    "Effects": "When the Gravitational Grip trap is triggered by enemy, there's a 20% chance that it will also inflict \"The Bull's Eye\"",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Shotgun Turret: Volley Fire",
-    "Type": "Artillery Marshal",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Shotgun Turret",
-    "Effects": "Shotgun Turret DMG +30%. Power Consumption -30%, with a 30% chance to trigger the shrapnel effect",
-    "Level": "20-35"
-  },
-  {
-    "Icon": "",
-    "Name": "Gold Pickaxe and Silver Pickaxe",
-    "Type": "Prospector",
-    "Category": "Gathering",
-    "Specialization": "New Formula: Gold Axe, Silver Axe",
-    "Effects": "Gold and Silver Pickaxes have low durability. When using the Gold Pickaxe for mining, there is a chance to receive Spice. When using the Silver Pickaxe for logging, there is a chance to receive a random Fruit",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Lucky Logging Platform",
-    "Type": "Prospector",
-    "Category": "Gathering",
-    "Specialization": "New Facility: Lucky Logging Platform",
-    "Effects": "Able to receive random agricultural produce when in a sunny area",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Stardust Mining Platform",
-    "Type": "Prospector",
-    "Category": "Gathering",
-    "Specialization": "New Facility: Stardust Mining Platform",
-    "Effects": "Increase Mining yield by 20%. Can mine Stardust when in a Pollution Zone",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Art of Stardust Decay",
-    "Type": "Smelter",
-    "Category": "Gathering",
-    "Specialization": "New Formula: Art of Stardust Decay",
-    "Effects": "Consume Stardust Source to craft Acid using the Electric Furnace",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Crystal Transformation",
-    "Type": "Smelter",
-    "Category": "Gathering",
-    "Specialization": "New Formula: Beryllium Crystal, Vanadium Crystal, Iridium Crystal, Platinum Crystal",
-    "Effects": "Turn Stardust Source and alloy ingots into various types of Crystals at the Electric Furnace",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Electric Furnace: Electrolysis",
-    "Type": "Smelter",
-    "Category": "Gathering",
-    "Specialization": "Facility Boost: Electric Furnace",
-    "Effects": "Doubles Yield when smelting Aluminum and Tungsten Ingots using the Electric Furnace",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Spectral Cloak",
-    "Type": "Machinist",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Spectral Cloak",
-    "Effects": "Activate to become cloaked for 120s. Upon leaving combat, you'll become steathy. Use up to 10 times",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Scout Drone: Invisible Hunter",
-    "Type": "Machinist",
-    "Category": "Crafting",
-    "Specialization": "Improved Formula: Scout Drone",
-    "Effects": "Scout Drones gain The Bull's Eye effect, +30% HP and DMG. Scout drones can also now be used up to 5 times",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Stardust Barrier: Hold the Line",
-    "Type": "Machinist",
-    "Category": "Crafting",
-    "Specialization": "Improved Formula: Stardust Barrier",
-    "Effects": "Stardust Barriers +50% HP. When the Stardust Barrier is deployed, it replenishes 50% HP for all allies within 3m. Stardust Barriers can also now be used 5 times",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Golden Knife",
-    "Type": "Demolition Expert",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Golden Knife",
-    "Effects": "A throwing knife with extremely high damage that is made from gold. When it hits an enemy, it will trigger the Unstable Bomber effect. When it hits the Weakspot of a Deviant, trigger 1 additional Unstable Bomber effect",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "High Power Warhead",
-    "Type": "Demolition Expert",
-    "Category": "Crafting",
-    "Specialization": "New Formula: High Power Warhead",
-    "Effects": "A high-efficency Rocket Launcher warhead. It's lighter and deals more damage to buildings and vehicles",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Ultra Grenade",
-    "Type": "Demolition Expert",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Ultra Grenade",
-    "Effects": "Higher Blast DMG, and additional bonus DMG against buildings and vehicles",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Rare Crystal Set",
-    "Type": "Master Craftsman",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Rare Crystal Set",
-    "Effects": "Turn Crystals into the Rare Crystal Set with the Electric Furnace. The Rare Crystal Set can be sold for 12k energy links",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Stardust Regulator",
-    "Type": "Master Craftsman",
-    "Category": "Crafting",
-    "Specialization": "New Formula: Stardust Regulator",
-    "Effects": "Recover 70% of HP immediately and gain a Shield equal to 30% Max HP. This has a 30s cooldown (independent of activators' cooldowns) and can be used up to 15 times",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Supplies Workbench: Anti-Armor",
-    "Type": "Master Craftsman",
-    "Category": "Crafting",
-    "Specialization": "Facility Boost: Supplies Workbench",
-    "Effects": "Yield +30% when crafting AP Ammo, and Crafting Time -50%",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Hydraulic Generator: One with the Tides",
-    "Type": "Sparksmith",
-    "Category": "Management",
-    "Specialization": "Facility Boost: Hydraulic Generator",
-    "Effects": "Maximum number of Generators +1. Power Output +0-7w, depending on the speed of water flow",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Deviant Power Generator: Stardust Unleashed",
-    "Type": "Sparksmith",
-    "Category": "Logistics",
-    "Specialization": "Facility Boost: Deviant Power Generator",
-    "Effects": "Increase Deviant Power Generator's power output by 15%",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Lightning Impulse Regulator",
-    "Type": "Sparksmith",
-    "Category": "Management",
-    "Specialization": "New Formula: Lightning Impulse Regulator",
-    "Effects": "When in your backpack, being struck by lightning restores your HP to full and grants Movement Speed +15% and Psi Intensity +30% for 60s",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Nalcott Easter Egg",
-    "Type": "Star Chef",
-    "Category": "Management",
-    "Specialization": "New Formula: Nalcott Perk",
-    "Effects": "Use to randomly receive the contents of a Settlement Loot Crate",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Kitchen Set: Gourmand",
-    "Type": "Star Chef",
-    "Category": "Management",
-    "Specialization": "Facility Boost: Kitchen Set",
-    "Effects": "Base effects of all Dishes +30% when prepared using a Kitchen Set. Effect Duration +50% and crafting time -50%",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Stardust Dish: Shell Break",
-    "Type": "Star Chef",
-    "Category": "Logistics",
-    "Specialization": "Improved Formula: Stardust Dish",
-    "Effects": "The Stardust Dish provides 2 special Whim effects. Within 30 minutes of use, continuously recover HP when Sanity is full",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Gatling Cannon: Power Blast",
-    "Type": "Artillery Marshal",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Gatling Cannon",
-    "Effects": "Gatling Cannons deal +30% DMG. When your territory exits combat, Durability recovers to 100%",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Pulse Power Device",
-    "Type": "Sparksmith",
-    "Category": "Management",
-    "Specialization": "New Formula: Pulse Power Device",
-    "Effects": "When in your backpack, recover all HP, increase Movement Speed by 15% and Psi Intensity by 30% for 60s when struck by lightning during rainstorms",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Red Plasma Rounds",
-    "Type": "Artillery Marshal",
-    "Category": "Building",
-    "Specialization": "New Formula: Red Plasma Rounds",
-    "Effects": "Special ammunition used by Gatling Cannons. They are extremely expensive but overwhelmingly powerful. There is no bullet drop in its trajectory, deals tons of damage, and has a large explosive radius. 24 hour duration",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Reinforced Structures: Healing Defense",
-    "Type": "Tinkerer",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Reinforced Structures",
-    "Effects": "Reinforced structures gain the Healing Defense effect. When your Territory exits combat, the Durability of reinforced structures is automatically restored to 80%",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Rifle Turrent: Two Birds One Stone",
-    "Type": "Artillery Marshal",
-    "Category": "Building",
-    "Specialization": "Facility Boost: Rifle Turret",
-    "Effects": "Rifle Turret DMG +30%, Durability +30%, and attacks on target trigger a Bounce effect",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Silver Plasma Missiles",
-    "Type": "Artillery Marshal",
-    "Category": "Building",
-    "Specialization": "New Formula: Silver Plasma Missiles",
-    "Effects": "A special type of ammunition for the Gatling Cannon. Costly to produce but delivers very high DMG. Bullets fly in a perfectly straight trajectory, and deliver very high Blast DMG across a large radius",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Stardust Byproducts",
-    "Type": "Smelter",
-    "Category": "Gathering",
-    "Specialization": "New Formula: Acid",
-    "Effects": "Consume Stardust Source to craft Acid using the Electric Furnace",
-    "Level": "40-50"
-  },
-  {
-    "Icon": "",
-    "Name": "Stardust Delicacy",
-    "Type": "Star Chef",
-    "Category": "Management",
-    "Specialization": "Improved Formula: Stardust Delicacy",
-    "Effects": "Dishes infected with Stardust no longer reduce Sanity. Instead, they will instantly restore full Sanity and also grant 2 random Whims",
-    "Level": "40-50"
+      "Icon": "",
+      "Name": "Activated Carbon Filter",
+      "Type": "Hydro Engineer",
+      "Category": "Control",
+      "Specialization": "New Formula: Activated Carbon Filter",
+      "Effects": "When this item is in your Backpack,\nenjoy a 30% chance of obtaining a\nportion of Boiled Water or Pure Water\nwhen collecting water with a Flask.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Adrenaline Shot: Phoenix",
+      "Type": "Master Craftsman",
+      "Category": "Tier",
+      "Specialization": "Improved Formula: Adrenaline Shot",
+      "Effects": "Take less DMG for the first 10s after\nrespawning, and slowly recover HP.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Armor Module",
+      "Type": "Legendary Rosetta",
+      "Category": "Crafting",
+      "Specialization": "Unlocks New Formula: Armor Module formula",
+      "Effects": "Crafting Drones with special Modules grants them advanced abilities.\nWhen the Drone is without a Shield, automatically consumes 3 Electronic Parts every 30 seconds, granting the Drone a Shield value of 5,000 points.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Art of Stardust Decay",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "Unlock New Formula: Art of Stardust Decay",
+      "Effects": "Consume Stardust Source to craft\nAcid using the Electric Furnace.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Backpack Expansion",
+      "Type": "Master Craftsman",
+      "Category": "Crafting",
+      "Specialization": "Unlock New Formula: Backpack Expansion",
+      "Effects": "When in your Backpack, increase Max Load by 40 - 80.\nEffect cannot stack.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Basic Defense: Battle-Hardened",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Basic Defense",
+      "Effects": "Sandbags,Shelters, and High\nFortifications gain the Battle-Hardened\neffect, Durability +100%.\n\nWhen your territory exists combat,\nDurability recovers to 100%.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Bastille Gene",
+      "Type": "Legendary Mayfly",
+      "Category": "Building",
+      "Specialization": "Unlocks New Formula: Bastille Gene formula",
+      "Effects": "Use it to enhance the Gene Coherence Injection and unlock its advanced capabilities.\nEnter Bastille status after standing still for 2s. In Bastille status, DMG Reduction +10%, Weakspot DMG Reduction +20%, and taking hits from enemies will mark them (cooldown: 10s).",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Bastille Gene Fiber",
+      "Type": "Legendary Mayfly",
+      "Category": "Building",
+      "Specialization": "Unlocks New Formula: Bastille Gene Fiber",
+      "Effects": "The gear crafted with it gains the following Use:\nGear Durability +30%.\nIf this gear is a Top, it gains a bonus Use: While in the Coherence status, automatically consumes 10 Stardust Source per minute and restores 10% Durability to a piece of gear with the lowest Durability.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Bed: A Place to Call Home",
+      "Type": "Tinkerer",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Bed",
+      "Effects": "Sleep for more then 10s to cure all\ndisease and reduce Stamina\ndepletion for the next 10 minutes.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Bed: Heat Preservation",
+      "Type": "Tinkerer",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Bed",
+      "Effects": "Sleep for more then 10s to gain 30% Cold Resist for the next 30 minutes.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Biomass Generator: Heat Generator",
+      "Type": "Sparksmith",
+      "Category": "Management",
+      "Specialization": "Improved Formula: Biomass Generator",
+      "Effects": "Can use Hot Rock Ore to generate electricity. Power output +30%.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Biomass Generator: Sustained Output",
+      "Type": "Sparksmith",
+      "Category": "Control",
+      "Specialization": "Facility Boost: Biomass Generator",
+      "Effects": "Biomass Generator Power Output +5w,\nand Fuel Burn Duration +150%.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Biomass Missile: Ample Munition",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "Improved Formula: Biomass Missile",
+      "Effects": "Plasma Missiles -80% Weight, and +2\nCrafting Yield",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Blade Fan",
+      "Type": "Demolition Expert",
+      "Category": "Crafting",
+      "Specialization": "Unlock New Formula: Blade Fan",
+      "Effects": "Made of multiple Throwing Daggers. Upon hitting a target, it triggers different effects based on the Throwing Daggers used.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Building Master",
+      "Type": "Tinkerer",
+      "Category": "Building",
+      "Specialization": "Material structures +150, furniture +50",
+      "Effects": "",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Canned Goods: Mini Canner",
+      "Type": "Star Chef",
+      "Category": "Control",
+      "Specialization": "Improved Formula: Canned Goods",
+      "Effects": "+1 Yield when crafting Canned goods.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Chainsaw: Chainsaw Horror Show",
+      "Type": "Prospector",
+      "Category": "Gathering",
+      "Specialization": "Improved Formula: Chainsaw",
+      "Effects": "Chainsaw Durability cap +50%, Chainsaw\nAttack Speed +30%, and Chainsaw Melee\nDMG +100%.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Chef's Knife",
+      "Type": "Star Chef",
+      "Category": "Control",
+      "Specialization": "New Formula: Chef's Knife",
+      "Effects": "When this item is in your Backpack,\nyou gain +1 meat when butchering\nanimals, and you have a 30-60%\nchance of getting additional by-products.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Claymore Mine: Frost Trap",
+      "Type": "Demolition Expert",
+      "Category": "Crafting",
+      "Specialization": "Improved Formula: Claymore Mine",
+      "Effects": "Generates 4 Frost Vortexes when triggered",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Claymore Mine: Warrior's Resolve",
+      "Type": "Demolition Expert",
+      "Category": "Tier",
+      "Specialization": "Improved Formula: Claymore Mine Deals an additional 4000",
+      "Effects": "+400% Psi Intensity\ndamage and increases Max HP by 400% Psi Intensity",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Combo Chipset",
+      "Type": "Machinist",
+      "Category": "Tier",
+      "Specialization": "New Formula: Combo Chipset",
+      "Effects": "Turn Electronic Parts, Metal Scrap\nand Parts into the Combo Chipset\nusing the Supplies Workbench. The\nCombo Chipset can be sold for a large number of Energy Links.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Composite Crystal",
+      "Type": "Master Craftsman",
+      "Category": "Crafting",
+      "Specialization": "Unlock New Formula: Composite Crystal",
+      "Effects": "Can be crafted with Cold Crystal Ore to hot Rock Ore at the supplies Workbench. Can be sold for a high price",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Compost Bin",
+      "Type": "Child of the Earth",
+      "Category": "Control",
+      "Specialization": "New Formula: Compost Bin",
+      "Effects": "When this item is in your Backpack, 1-3\nportions of Spoiled Food will be transformed\ninto fresh Mushrooms or a Fertilizer of a\nrandom type every 5-10 mins.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Crystal Transformation",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "New Formula: Beryllium Crystal, Vanadium Crystal, Iridium Crystal, Platinum Crystal",
+      "Effects": "Turn Stardust Source into various\ntypes of Crystals at the Electric\nFurnace.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Gear Workbench: Customization ",
+      "Type": "Master Craftsman",
+      "Category": "Tier",
+      "Specialization": "Gear Workbench",
+      "Effects": "Weapons and Armor crafted using the Gear\nWorkbench enjoys +30% Max Durability",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Deluxe Storage Crate",
+      "Type": "Tinkerer",
+      "Category": "Building",
+      "Specialization": "New Facility: Deluxe Storage Crate",
+      "Effects": "A large Storage Crate with 64 item\nslots.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Deviant Power Generator: Energy Extraction",
+      "Type": "Tinkerer",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Deviation Power Generator",
+      "Effects": "Deviant Power Generator output +10%. If the enviroment temperature is higher then 50C power output +20%.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Deviant Power Generator: Stardust Unleashed",
+      "Type": "Sparksmith",
+      "Category": "Logistics",
+      "Specialization": "Facility Boost: Deviant Power Generator",
+      "Effects": "Increase Deviant Power Generator's power output by 15%.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Deviation Energy Generator",
+      "Type": "Sparksmith",
+      "Category": "Control",
+      "Specialization": "Facility Boost: Deviation Energy Generator",
+      "Effects": "Maximum Number of Generators -1,\nbut +40% in Deviation Energy\nGenerator power output.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Disassembly Bench: Careful Disassembly",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "Facility Boost: Disassembly Bench",
+      "Effects": "Yield +30% when disassembling Parts,Fabrics\nand Plastic.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Dummy: Fear and Terror",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "Improved Formula: Dummy",
+      "Effects": "Automatically attracts nearby Deviants.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Electric Chainsaw: Chainsaw Horror Show",
+      "Type": "Prospector",
+      "Category": "Gathering",
+      "Specialization": "Improved Formula: Electric Chainsaw",
+      "Effects": "Electric Chainsaw gains Max Durability +50%, Attack Speed +30%, and Melee DMG +100%",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Electric Drill: Treasure Hunt",
+      "Type": "Prospector",
+      "Category": "Gathering",
+      "Specialization": "Improved Formula: Electric Drill",
+      "Effects": "Enjoy +100% yield when mining for Gold Ore,\nSilver Ore, and Startrace Ore with an Electric\nDrill.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Electric Furnace: Efficiency Lover",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "Facility Boost: Electric Furnace",
+      "Effects": "Power Consumption -50%, and Crafting\nDuration -60%",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Electric Furnace: Electrolysis",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "Facility Boost: Electric Furnace",
+      "Effects": "Doubles Yield when smelting Aluminum and\nTungsten Ingots using the Electric Furnace.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Electronic Recycling",
+      "Type": "Machinist",
+      "Category": "Tier",
+      "Specialization": "Facility Boost: Disassembly Bench",
+      "Effects": "Yield +50% for Metal Scrap and Electronic\nParts.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Electronics Grabber",
+      "Type": "Machinist",
+      "Category": "Tier",
+      "Specialization": "New Formula: Electronics Grabber",
+      "Effects": "When this item is in your Backpack, enjoy a\nsmall to medium chance of getting extra\nElectronic Parts when opening Storage Crates.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Elysium Coherence Injection",
+      "Type": "Legendary Mayfly",
+      "Category": "Building",
+      "Specialization": "Unlock new formulas: Gene Extractor and Elysium Coherence Injection",
+      "Effects": "When holding a Gene Extractor, defeating Deviants yields gene fragments based on enemy types. These fragments can be used to craft the Gene Coherence Injection for enhancing both defensive and offensive abilities. The Coherence status ends after taking damage equal to 70% of your Max HP.\nAfter using the Elysium Coherence Injection, staying in any territory for 3s will grant you 1 Coherence, with the following effects based on the materials used:\nDeviant Fragment: At 10 Coherence, unlock Double Jump and Aerial Sprint abilities within your territory.\nAnima Fragment: At 10 Coherence, Attack of all allied turrets and traps within the territory +50%.\nStarlith: At 30 Coherence, convert all Coherence to Ascension, increasing Psi Intensity by 1% per stack but reducing Attack by 0.5%. Each attack consumes one stack of Ascension.\nMatterlith: At 30 Coherence, while in the territory, Stamina Consumption - 30%, Roll Speed +30%, and Tactical Item DMG +30%",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Explosive On-the-Go",
+      "Type": "Demolition Expert",
+      "Category": "Tier",
+      "Specialization": "New Formula: Explosive On-the-Go",
+      "Effects": "When this item is in your Backpack,\n-30-60% Weight for all Grenades,\nMolotov Cocktails, High Explosive\nand Rocket Warheads. After you use\nany throwable, your Sprint Speed +20% for 2s.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Explosive Sack",
+      "Type": "Demolition Expert",
+      "Category": "Tier",
+      "Specialization": "New Formula: Explosive Sack",
+      "Effects": "When this item is in your Backpack,\ngrants a 30%-60% chance to recover\nMixed Explosives after using High-Explosive Grenades and Molotov Cocktails.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Explosive Throwables: Echo Blast",
+      "Type": "Demolition Expert",
+      "Category": "Tier",
+      "Specialization": "Improved Formula: Explosive Throwable",
+      "Effects": "High-Explowsive Grenade and Molotov\nCocktail DMG +30%. Your first kill\ninflicted with one of these items\ntriggers an additional explosion,\ndealing 400% Psi Intensity DMG.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Extreme Gene",
+      "Type": "Legendary Mayfly",
+      "Category": "Building",
+      "Specialization": "Unlocks new formula: Extreme Gene",
+      "Effects": "Use it to enhance the Gene Coherence Injection and unlock its advanced capabilities.\nThe Coherence status termination condition changes to total damage taken reaching 150% of Max HP. When HP is below 50%, Max Load +50. When HP is below 30%, Weapon DMG +15%, Tactical Item DMG +15%. When HP is below 10%, trigger a healing effect, recovering 1% of Max HP for each unused point of Max Load.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Extreme Gene Fiber",
+      "Type": "Legendary Mayfly",
+      "Category": "Crafting",
+      "Specialization": "Unlocks New Formula: Extreme Gene Fiber",
+      "Effects": "The gear crafted with it gains the following Use:\nWeakspot DMG Reduction +3%.\nIf this gear is a Top, it gains a bonus Use: When the Coherence status is terminated, gain invincibility, but Weapon DMG, Status DMG, and Tactical Item DMG drop to 0 for 2s.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Fish Pheromones",
+      "Type": "Child of the Earth",
+      "Category": "Logistics",
+      "Specialization": "Unlock New Formula: Pheromone Bait",
+      "Effects": "Can be crafted with pheromones from certain fish at the Supplies Workbench. Use it to increase your chances of catching specific kinds of fish",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Flamethrower Trap: Kebob Party",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "Improved Formula: Flamethrower Trap",
+      "Effects": "Flamethrower Trap inflicts Burn, if the enemy has more then 10 stacks of Burn, they explode 1 time. Cooldown 1 second.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Flamethrower Trap: Scorching Blast",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Flamethrower Trap",
+      "Effects": "Flamethrower Trap DMG +30%. When\nthe Flamethrower Trap Kills and enemy,\nan explosion is triggered, dealing AoE\nBlast DMG to all nearby units (1s cooldown).",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Focus Module",
+      "Type": "Legendary Rosetta",
+      "Category": "Gathering",
+      "Specialization": "Unlock new formula: Focus Module",
+      "Effects": "A special item to enhance drones and unlock their advanced capabilities.\nGathering Drone: Grants the Drone a chance to extract 10-100 barrels of Crude Oil from underground layers when mining in contest areas.\nFirepower Drone: Enables attacks to trigger Unstable Bomber.\nExploration Drone: Reduces gliding Stamina consumption by 50%. During gliding, every 4 seconds, the Drone marks a random enemy within 20 meters.\nTerritory Drone: After the Drone makes 10 hits, boosts the Weapon DMG and Status DMG of all allies within 15 meters for 10 seconds, stacking up to 3 times.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Frag Grenade: Viscoelastic Cold Fire",
+      "Type": "Demolition Expert",
+      "Category": "Crafting",
+      "Specialization": "Improved Formula: Frag Grenade",
+      "Effects": "Units hit by the Frag Grenade will be marked with Cold Fire. When a marked unit is killed, the enviromental temperature within a certain range is reduced by 100C.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Frost Armor",
+      "Type": "Master Craftsman",
+      "Category": "Crafting",
+      "Specialization": "Unlock New Formula: Frost Shield Generator",
+      "Effects": "Can be crafted at the Advanced Synthesis Bench. When the temperature is below 0C, gain a shield equal to 200% PSI Intensity. The shield refreshes every 300 seconds. If crafted with Ice Crystals, the shields value is increased to 500% Psi Intensity.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Furnace: Chaosium Material Analysis",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "Facility Boost: Furnace",
+      "Effects": "When using Furnaces and Electic Furnaces to produce Chaosium, production speed -30%; Chaosium yield +1 for ever 5C in excess of 30C, up to a maximum of +10.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Furnace: Large Furnace",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "Facility Boost: Furnace",
+      "Effects": "For every 5C increase in environmental temperature, output increases by 1%, with no upper limit.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Furnace: Precision Refining",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "Facility Boost:",
+      "Effects": "Resource Consumption -30%, and Smelting\nSpeed -30% when smelting Copper, Bronze,\nSteel, Aluminum, and Tungsten Ingots using a\nFurnace of Electric Furnace.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Furnace: Sintering",
+      "Type": "Tinkerer",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Furnace",
+      "Effects": "Sintered Brick and Glass Crafting Speed -50%,\nYield +100%.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Gardening Gloves",
+      "Type": "Child of the Earth",
+      "Category": "Control",
+      "Specialization": "New Formula: Gardening Gloves",
+      "Effects": "When this item is in your Backpack,\ngrants a 6-12% chance to double the\namount of seeds you gather.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Gatling Cannon: Power Blast",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Gatling Cannon",
+      "Effects": "Gatling Cannons deal +30% DMG. When your\nTerritory exits combat,Durability recovers to 100%.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Gear Workbench: Customization",
+      "Type": "Master Craftsman",
+      "Category": "Crafting",
+      "Specialization": "Facility Boost: Gear Workbench",
+      "Effects": "Weapons and Armor crafted using the Gear Workbench enjoy +30% Max Durability.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Generator: Electrical Expert",
+      "Type": "Sparksmith",
+      "Category": "Control",
+      "Specialization": "Facility Boost: Generator",
+      "Effects": "Maximum Number of Generators +1,\nand +2w Power Output.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Generator: Heat Dissipation",
+      "Type": "Sparksmith",
+      "Category": "Management",
+      "Specialization": "Improved Formula: Generator",
+      "Effects": "When the nearby temperature is higher then 20C, every 1 additional degree increases power output by 0.2%. When the nearby temperature is higher then 60C, every 1 additional degree increases power output by 0.5% up to 40%.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Golden Knife",
+      "Type": "Demolition Expert",
+      "Category": "Tier",
+      "Specialization": "New Formula: Golden Dagger",
+      "Effects": "A deadly throwing knife made of gold.\nLand a throw on target against a\nDeviant to trigger Unstable Bomber.\nHitting a Weakspot triggers Unstable\nBomber once more.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Gold Pickaxe and Silver Pickaxe",
+      "Type": "Prospector",
+      "Category": "Gathering",
+      "Specialization": "New Formula: Gold Pickaxe, Silver Pickaxe",
+      "Effects": "Gold and Silver Pickaxe aren't very\ndurable. When mining with a Gold\nPickaxe, you have a chance to obtain\nMixed Spices. When logging with a\nSilver Pickaxe, you have a chance to\nobtain fruits.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Load Handling",
+      "Type": "Prospector",
+      "Category": "Gathering",
+      "Specialization": "New Formula: Load Handling",
+      "Effects": "When this item is in your Backpack,\n-30-60% Weight on all Logs,Gravel, and Ores also\ncurrently stored in your Backpack.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Gravitational Grip: Bonds of Guidance",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Gravitational Grip",
+      "Effects": "When the Gravitational Grip trap is\ntriggered by enemy, there's a 20%\nchance that it will also inflict \"The Bull's Eye\".",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Grenade: Cluster Grenade",
+      "Type": "Demolition Expert",
+      "Category": "Crafting",
+      "Specialization": "Improved Formula: Grenade",
+      "Effects": "After exploding, it generates a secondary bomb that sticks to a random target hit and explodes after a delay",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Grenade: Line Charge",
+      "Type": "Demolition Expert",
+      "Category": "Crafting",
+      "Specialization": "Improved Formula: Grenade",
+      "Effects": "When it explodes, it pulls affected Deviants toward the center of the explosion.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Grilled Dish: Grilling Master",
+      "Type": "Star Chef",
+      "Category": "Managment",
+      "Specialization": "Improved Formula: Grilled Dishes",
+      "Effects": "Grilled Dishes grant Cold Resist +10 for 10 minutes when consumed; yield +1.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Gunpowder Extraction",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "Unlock New Formula: Gunpowder",
+      "Effects": "Use Hot Rock Ore and other materials to craft gunpowder at the Supplies Workbench.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Harvesting Sickle",
+      "Type": "Child of the Earth",
+      "Category": "Control",
+      "Specialization": "New Formula: Harvesting Sickle",
+      "Effects": "When this item is in your Backpack,\nyou enjoy a 20-40% chance of\ndoubling your crop gain when\ngathering in the wild.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Healing Module",
+      "Type": "Legendary Rosetta",
+      "Category": "Building",
+      "Specialization": "Unlocks New Formula: Healing Module formula",
+      "Effects": "Crafting Drones with special Modules grants them advanced abilities.\nAutomatically consumes 10 Adhesive, Metal Scraps, and 5 Rubber every 10 minutes to restore 50% Durability for the Gear that you wear and has the lowest Durability.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "High Power Warhead",
+      "Type": "Demolition Expert",
+      "Category": "Tier",
+      "Specialization": "New Formula: High Power Warhead",
+      "Effects": "A high-efficency Rocket Launcher\nwarhead. It's lighter and deals more\ndamage to buildings and vehicles.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Hydraulic Generator: One\nwith the Tides",
+      "Type": "Sparksmith",
+      "Category": "Control",
+      "Specialization": "Facility Boost: Hydraulic Generator",
+      "Effects": "Maximum Number of Generators +1.\nPower Output +0-7w,depending on\nspeed of water flow.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Hydropower Generator: One With the Tides",
+      "Type": "Sparksmith",
+      "Category": "Management",
+      "Specialization": "Facility Boost: Hydropower Generator",
+      "Effects": "Maximum number of Generators +1. Hydropower Generator power output +0-7w depending on the speed of water flow.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Ice Throwing Dagger and Flame Throwing Dagger",
+      "Type": "Demolition Expert",
+      "Category": "Crafting",
+      "Specialization": "Unlock New Formulas: Ice Throwing Dagger and Flame Throwing Dagger",
+      "Effects": "Can be crafted with Hot Rock Ore or Cold Crystal Ore at the Supplies Workbench. Increases or reduces the target's environmental temperature upon hitting.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Iceshake: Brain Freeze",
+      "Type": "Star Chef",
+      "Category": "Control",
+      "Specialization": "Improved Formula: Iced Treat",
+      "Effects": "Iceshake effect Time Duration +200%, and\nPotency +30%.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Improved Compound Fertilizer",
+      "Type": "Child of the Earth",
+      "Category": "Control",
+      "Specialization": "New Formula: Improved Compound Fertilizer",
+      "Effects": "Crop fertilizer that can significantly enhance\ncrop Mutation Rate and Yield,but will also slow\ndown Growth.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Invisible Module",
+      "Type": "Legendary Rosetta",
+      "Category": "Building",
+      "Specialization": "Unlocks New Formula: Invisible Module formula",
+      "Effects": "Crafting Drones with special Modules grants them advanced abilities.\nAutomatically consumes 10 units of Stardust Source, making the Drone enter Stealth for 5 minutes. The Drone will lose Stealth when it deals damage.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Judgment Coherence Injection",
+      "Type": "Legendary Mayfly",
+      "Category": "Crafting",
+      "Specialization": "Unlocks New Formula: Judgment Coherence Injection formula",
+      "Effects": "Defeat Deviants while holding a Gene Extractor to gain gene fragments based on enemy types.\nCraft the Gene Coherence Injection with gene fragments to enhance combat abilities. The Coherence status ends after taking damage equal to 70% of your Max HP.\nAfter using the Judgement Coherence Injection, each enemy defeated grants 1 Coherence, with the following effects based on the materials used.\nGene Fragments:\nDeviant Fragment: At 10 Coherence, Status DMG +10%.\nAnima Fragment: At 10 Coherence, Weapon DMG +10%.\nStarlith: At 30 Coherence, enter Beyond Mode, consuming 1 Coherence per attack, dealing 50 Sanity DMG to players, and DMG equal to 10% of Max HP to non-player enemies (up to 5,000). Exit Beyond Mode when Coherence is depleted.\nMatterlith: At 30 Coherence, Roll Stamina Consumption +50%, Roll Speed +30%, DMG Reduction during rolling increased to 80%, and summon a Flamethrower Trap that deals damage equal to 1,000% Psi Intensity over 5s.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Jump Booster",
+      "Type": "Machinist",
+      "Category": "Crafting",
+      "Specialization": "Unlock New Formula: Jump Booster",
+      "Effects": "Use to gain the double jump ability for 30 seconds. Can be used up to 5 times.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Kitchen Set: Gourmand",
+      "Type": "Star Chef",
+      "Category": "Control",
+      "Specialization": "Facility Boost: Kitchen Set",
+      "Effects": "Based effects of all Dishes +30% when\nprepared using a Kitchen Set,Effect Duration\n+50% and Crafting Speed -50%.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Lightning Gene",
+      "Type": "Legendary Mayfly",
+      "Category": "Logistics",
+      "Specialization": "Unlocks New Formula: Lightning Gene formula",
+      "Effects": "Use it to enhance the Gene Coherence Injection and unlock its advanced capabilities.\n2. In combat, automatically select the nearest enemy within 20 meters every 10s, generating a lightning strike beneath them after a 3s delay, dealing damage equal to 4,000% Psi Intensity.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Lightning Gene Fabric",
+      "Type": "Legendary Mayfly",
+      "Category": "Logistics",
+      "Specialization": "Unlocks New Formula: Lightning Gene Fabric",
+      "Effects": "The gear crafted with it gains the following Use:\nCrit DMG Reduction +3%.\nIf this gear is a Top, it gains a bonus Use: While in the Coherence status, when attacked, a lightning strike will be generated where the attacker is in 3s, dealing damage equal to 4,000% Psi Intensity to all characters (cooldown: 30s).",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Lightning Impulse Regulator",
+      "Type": "Sparksmith",
+      "Category": "Control",
+      "Specialization": "New Formula: Lightning Impulse Regulator",
+      "Effects": "When this item is in your Backpack,\nbeing struck lightning restores your\nHP to full and grants Movement Speed\n+15% and Psi Intensity +30% for 60s.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Load Module",
+      "Type": "Legendary Rosetta",
+      "Category": "Logistics",
+      "Specialization": "Unlocks New Formula: Load Module formula",
+      "Effects": "Crafting Drones with special Modules grants them advanced abilities.\nAutomatically consumes 5 units of Portable Mixed Fuel every 10 minutes, granting you an additional 100 Load for 10 minutes.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Lucky Logging Site",
+      "Type": "Prospector",
+      "Category": "Gathering",
+      "Specialization": "New Facility: Lucky Logging Site",
+      "Effects": "You will have a chance to obtain\nrandom extra crops when gathering\nwhenever the sun is shining.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Metal Dissolution",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "Unlock New Formula: Metal Dissolution",
+      "Effects": "Use Acid and Gold Ore to craft Chaosium at the Electric Furnace.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Molecular Structure Research",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "Unlock New Formula: Ice Crystal and Fire Crystal",
+      "Effects": "Use Hot Rock Ore or Cold Crystal Ore to craft Fire Crystals and Ice Crystals at the Supplies Workbench",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Nalcott Easter Egg",
+      "Type": "Star Chef",
+      "Category": "Control",
+      "Specialization": "New Formula: Nalcott Perk",
+      "Effects": "Use to randomly receive the contents\nof a Settlement Loot Crate.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Nurture Coherence Injection",
+      "Type": "Legendary Mayfly",
+      "Category": "Gathering",
+      "Specialization": "Unlock new formulas: Gene Extractor and Nurture Coherence Injection",
+      "Effects": "When holding a Gene Extractor, defeating Deviants yields gene fragments based on enemy types. These fragments can be used to craft the Gene Coherence Injection for enhancing gathering abilities. The Coherence status ends after taking damage equal to 70% of your Max HP.\nAfter using the Nurture Coherence Injection, each gathering action grants 1 Coherence, with the following effects based on the materials used:\nDeviant Fragment: At 10 Coherence, Mining Savage Strike Rate +50%, and Mining Last Hit Yield +100%.\nAnima Fragment: At 10 Coherence, while holding a pickaxe or chainsaw, Movement Speed +15%, and the yield of Logs, Sulfur, Silver Ore, Gold Ore, and Stardust +30%.\nStarlith: At 30 Coherence, consume all Coherence to increase final hit yield from logging and mining by 1000% for 5s.\nMatterlith: At 30 Coherence, there's a small chance to trigger an Oil Gusher when mining in contested areas, granting 30 Barreled Crude Oil to all allied players within 5 meters.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Oil Processing",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "New Formula: Stardust Source",
+      "Effects": "Turn Startrace Ore and Portable Mixed Fuel\nin Stardust Source using the Electric\nFurnace.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Pickaxe: Forest Foe",
+      "Type": "Prospector",
+      "Category": "Gathering",
+      "Specialization": "Improved Formula: Pickaxe",
+      "Effects": "Pickaxe Durability is doubled. Enjoy +30% yield\nwhen logging with the Pickaxe, and gain 150%\nof the resources when you completely destroy\na tree.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Pickaxe: Moonlight Mining",
+      "Type": "Prospector",
+      "Category": "Gathering",
+      "Specialization": "Improved Formula: Pickaxe",
+      "Effects": "Enjoy +25% yield when mining\nCopper Ore,Tin Ore,Iron Ore,\nAluminum Ore, and Tungsten with the\nPickaxe during the day. Doubles to +50\nyield at night.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Planter Box: Greenhouse Planting",
+      "Type": "Child of the Earth",
+      "Category": "Management",
+      "Specialization": "Improved Formula: Planter Box",
+      "Effects": "Increases crop growth rate. Yield +1 for every 20C increase in temperature.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Portable Diving Gear",
+      "Type": "Hydro Engineer",
+      "Category": "Management",
+      "Specialization": "New Forumula: Portable Diving Gear",
+      "Effects": "When this item is in your Backpack,\n+40-100% Max Oxygen, 40%, and +20%\nSwim Speed when diving.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Portable Fridge",
+      "Type": "Star Chef",
+      "Category": "Control",
+      "Specialization": "New Formula: Portable Fridge",
+      "Effects": "When this item is in your Backpack.\nFood Spoilage Speed -70-90%.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Portable Gun Turret: Explosive Automatic Ammo",
+      "Type": "Machinist",
+      "Category": "Crafting",
+      "Specialization": "Improved Formula: MG Turret",
+      "Effects": "The MG Turret's bullets have a chance to triggering Unstable Bomber.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Portable MG Turret: Barrage of Bullets",
+      "Type": "Machinist",
+      "Category": "Tier",
+      "Specialization": "Improved Formula: Portable MG",
+      "Effects": "Turret\nPortable MG Turrets can deliver an\nadditional shot,HP and DMG +30%,\nand can now be used up to 5 times.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Portable Rainwater Collector",
+      "Type": "Hydro Engineer",
+      "Category": "Control",
+      "Specialization": "New Formula: Portable Rainwater Collector",
+      "Effects": "When this item is in your Backpack, you will\ncontinually restore Hydration on rainy days and\nalso enjoy a 30-60% chance of obtaining 1\nportion of Dirty Water, Pure Water, or Acid every minute.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Portable Thermostat",
+      "Type": "Master Craftsman",
+      "Category": "Crafting",
+      "Specialization": "Unlock New Formula: Portable Thermostat",
+      "Effects": "Can be crafted at the Supplies Workbench. When activated, expends 1 Storage Battery every 30 mins to reduce or increase the environmental temperature within 3 meters by 20C (effect does not stack).",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Portable Updraft Device",
+      "Type": "Machinist",
+      "Category": "Tier",
+      "Specialization": "New Formula: Portable Updraft",
+      "Effects": "Cannon\nUse to generate an Updraft Cannon\nthat lasts for 30s. The Updraft\nCannon will give you a +200% Jump\nHeight, and can be used 10 times.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Precious Metal Refining",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "New Formula: Gold Ingot,Silver Ingot",
+      "Effects": "Smelt Gold and Silver Ores into Ingots using\nthe Electric Furnace. The Ingots can be sold\nfor a large number of Energy Links.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Proliferation Gene",
+      "Type": "Legendary Mayfly",
+      "Category": "Building",
+      "Specialization": "Unlocks New Formula: Proliferation Gene formula",
+      "Effects": "Use it to enhance the Gene Coherence Injection and unlock its advanced capabilities.\nAfter using the injection, create a Proliferation Zone. Within this zone, the acquisition amount for all Parts, Fabrics, Plastics, Metal Scraps, Rubber, Adhesives, Electronic Parts, Crystals, and Acid is increased by 30% for 10s.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Proliferation Gene Fabric",
+      "Type": "Legendary Mayfly",
+      "Category": "Building",
+      "Specialization": "Unlocks New Formula: Proliferation Gene Fabric formula",
+      "Effects": "The gear crafted with it gains the following Use:\nMax Load +10%.\nIf this gear is a Top, it gains a bonus Use: While in the Coherence status, convert a small amount of Barreled Crude Oil in your backpack into Portable Mixed Fuel every 30s.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Pulse Power Device",
+      "Type": "Sparksmith",
+      "Category": "Management",
+      "Specialization": "Unlock New Formula: Pulse Power",
+      "Effects": "Device\nWhen in your Backpack,recover all\nHP,increase Movement Speed by\n15% and Psi Intensity by 30% for 60s when struck by lightning during rainstorms\n. Effect cannot stack.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Rare Crystal Set",
+      "Type": "Master Craftsman",
+      "Category": "Tier",
+      "Specialization": "New Formula: Rare Crystal Set",
+      "Effects": "Turn Crystals into the Rare Crystal\nSet using the Electric Furnace. The\nRare Crystal Set can be sold for a\nlarge number of Energy Links.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Red Plasma Rounds",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "Unlock New Formula: Red Plasma Rounds",
+      "Effects": "Special ammunition used by Gatling\nCannons\n. They are extremely\nexpensive but overwhelmingly\npowerful. There is no bullet drop in its\ntrajectory, deals tons of damage, and\nhas a large explosive radius. Can be\nkept for 24 hours.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Refining Facility: Smelting",
+      "Type": "Hydro Engineer",
+      "Category": "Management",
+      "Specialization": "Improved Formula: Refining Facility",
+      "Effects": "The Refining Facility can refine Sulfur into Hot Rock Ore.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Reinforced Structures: Healing Defense",
+      "Type": "Tinkerer",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Reinforced Structures",
+      "Effects": "Reinforced structures gain the Healing\nDefense effect. The maximum number\nof Structural items that can be placed\nin your Territory at any one time +80.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Rifle Turrent: Two Birds One Stone",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Rifle Turret",
+      "Effects": "Rifle Turret DMG +30%, Durability +30%, and\nattacks on target trigger a Bounce effect.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Roasted & Dried: Low and Slow",
+      "Type": "Star Chef",
+      "Category": "Control",
+      "Specialization": "Improved Formula: Roasted",
+      "Effects": "Roasted and Dried Dishes now\nprovide +15 Energy, and +10% Sanity",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Robotics Facility: Skilled Mechanician",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Trap & Sentry Turret",
+      "Effects": "Trap and Sentry Turret Durability +50%.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Rosetta Gathering Drone",
+      "Type": "Legendary Rosetta",
+      "Category": "Gathering",
+      "Specialization": "Unlock new formula: Rosetta",
+      "Effects": "Gathering Drone.\nThe Rosetta Gathering Drone can be summoned at any time.\nIf the player hasn't reached their Load Limit, the drone will automatically seek out and gather the highest-level minerals nearby.\nThe special advanced effects depend on the crafting materials used.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Rosetta Firepower Drone",
+      "Type": "Legendary Rosetta",
+      "Category": "Crafting",
+      "Specialization": "Unlock new formula: Rosetta",
+      "Effects": "Firepower Drone.\nThe Rosetta Firepower Drone can be summoned at any time.\nThe drone has mid-range shooting capabilities.\nThe special advanced effects depend on the crafting materials used.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Rosetta Exploration Drone",
+      "Type": "Legendary Rosetta",
+      "Category": "Management",
+      "Specialization": "Unlock new formula: Rosetta",
+      "Effects": "Exploration Drone.\nThe Rosetta Exploration Drone can be summoned at any time.\nWhen present, it can replace V for special gliding. This special gliding has no takeoff height limit and doesn't lose altitude during flight, but Stamina consumption is greatly increased.\nThe special advanced effects depend on the crafting materials used.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Rosetta Territory Drone",
+      "Type": "Legendary Rosetta",
+      "Category": "Building",
+      "Specialization": "Unlock new formula: Rosetta",
+      "Effects": "Territory Drone.\nThe Rosetta Territory Drone can be summoned at any time.\nWhen the player is within their territory, the drone unlocks long-range shooting capabilities, while allied turrets and traps within the territory gain a 50% Attack boost.\nThe special advanced effects depend on the crafting materials used.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Scout Drone: Freezing Drone",
+      "Type": "Sparksmith",
+      "Category": "Management",
+      "Specialization": "Improved Formula: Scout Drone",
+      "Effects": "Scout Drone reduce the Movement Speed of nearby enemy units",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Scout Drone: Invisible Hunter",
+      "Type": "Machinist",
+      "Category": "Tier",
+      "Specialization": "Improved Formula: Scout Drone",
+      "Effects": "Scout Drones enjoy The Bull's Eye\neffect,+30% Scout Drone HP and\nDMG. Scout Drones can also now be\nused up to 5 times.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Shotgun Turret: Volley Fire",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Shotgun Turret",
+      "Effects": "Shotgun Turret DMG +30%, Power\nConsumption -30%, with a 30%",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Silentfire Shield",
+      "Type": "Machinist",
+      "Category": "Crafting",
+      "Specialization": "Unlock New Formula: Silentfire Shield",
+      "Effects": "Can be crafted at the synthesis bench. When the environmental temperature falls below 10\u00b0C, generate a 360\u00b0 shield for up to 300 Seconds. Shield Value = Your HP +100% Psi Intensity - Current Temperature * 500",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Silver Plasma Missiles",
+      "Type": "Artillery Marshal",
+      "Category": "Building",
+      "Specialization": "New Formula: Silver Plasma Missiles",
+      "Effects": "A special type of ammunition for the\nGatling Cannon. Costly to produce but delievers very high DMG. Bullets fly in a\nperfectly straight trajectory, and\ndeliver very high Blast DMG across a large radius.",
+      "Level": ""
+  },
+  {
+      "Icon": "",
+      "Name": "Snowmobile",
+      "Type": "Master Craftsman",
+      "Category": "Crafting",
+      "Specialization": "Unlock New Formula: Snowmobile",
+      "Effects": "Can be crafted at the Supplies Workbench. Movement Speed in snow +20%, Movement Speed in blizzards +10%, Cold Resist +10.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Solar Drill",
+      "Type": "Prospector",
+      "Category": "Gathering",
+      "Specialization": "New Formula: Solar Drill",
+      "Effects": "The Solar Drill charges itself on sunny\ndays. Enjoy +15-40% yield of\nCopper Ore,Tin Ore,Iron Ore,\nAluminum Ore and Tungsten Ore.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Solar Generator: Photon Power",
+      "Type": "Sparksmith",
+      "Category": "Control",
+      "Specialization": "Facility Boost: Solar Generator",
+      "Effects": "Solar Generator Power Output +10w.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Spectral Cloak",
+      "Type": "Machinist",
+      "Category": "Tier",
+      "Specialization": "New Formula: Spectral Cloak",
+      "Effects": "Activate to become Cloaked for 120s. Upon\nleaving combat, you'll become Steathy.Use up\nto 10 times.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Speed Coherence Injection",
+      "Type": "Legendary Mayfly",
+      "Category": "Logistics",
+      "Specialization": "Unlock New Formula: Speed Coherence Injection formula",
+      "Effects": "Defeat Deviants while holding a Gene Extractor to gain gene fragments based on enemy types.\n\nCraft the Gene Coherence Injection with gene fragments to enhance mobility. The Coherence status ends after taking damage equal to 70% of your Max HP.\nAfter using the Speed Coherence Injection, moving for 2s grants 1 Coherence, with the following effects based on the materials used.\nGene Fragments:\n\n\nDeviant Fragment: At 10 Coherence, enhance V's abilities, reducing Gliding Speed by 70% and increasing horizontal Gliding Speed by 50%\nAnima Fragment: At 10 Coherence, recover 5% HP and Sanity per second while driving, and gain Shield equal to 60% of Max HP when exiting driving (cooldown: 30s).\nStarlith: At 30 Coherence, gain invisibility for 10s after gliding ends.\nMatterlith: At 30 Coherence, while in a mobile territory or vehicle, Weapon DMG +20%, Status DMG +20%, and DMG Reduction +20%.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Speedy Module",
+      "Type": "Legendary Rosetta",
+      "Category": "Management",
+      "Specialization": "Unlock new formula: Speedy Module",
+      "Effects": "A special item to enhance drones and unlock their advanced capabilities.\n\n\nGathering Drone: When you hold a gathering tool, Max Stamina +50, Movement Speed +20%, Sprint Speed +30%, and the yield of the final hit when gathering resources +200%.\nFirepower Drone: Unlocks an electric shock skill for the Drone, allowing it to rush towards and paralyze enemies within attack range for 3 seconds.\nExploration Drone: You will gain a 15% Movement Speed bonus and the ability to Double Jump.\nTerritory Drone: When you're in another Meta's Territory, Stamina Consumption -30%, Roll Speed +30%, and Tactical Item DMG +30%.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Spicy Pepper",
+      "Type": "Star Chef",
+      "Category": "Management",
+      "Specialization": "Improved Formula: Spicy Pepper Dishes",
+      "Effects": "Dishes that include Spicy Pepper as an ingredient are 30% more effective. When consumed, they deal DMG equal to 10% Psi Intensity to nearby enemies, with a 30% chance to deal additional DMG equal to 90% Psi Intensity and inflict 1 stack of Burn.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Stardust Barrier: Hold the Line",
+      "Type": "Machinist",
+      "Category": "Tier",
+      "Specialization": "Improved Formula: Stardust Barrier",
+      "Effects": "Stardust Barriers +50% HP. When the\nStardust Barrier is deployed, it\nreplenishes 50% HP for all allies\nwithin 3m. Stardust Barriers can also now be used 5 times.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Stardust Byproducts",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "New Formula: Acid",
+      "Effects": "Consume Stardust Source to craft\nAcid using the Electric Furnace.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Stardust Delicacy",
+      "Type": "Star Chef",
+      "Category": "Control",
+      "Specialization": "Improved Formula: Stardust Delicacy",
+      "Effects": "Dishes infected with Stardust no\nlonger reduce Sanity. Instead, they\nwill instantly restore full Sanity and\nalso grant 2 random Whims.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Stardust Dish: Shell Break",
+      "Type": "Star Chef",
+      "Category": "Logistics",
+      "Specialization": "Improved Formula: Stardust Dish",
+      "Effects": "The Stardust Dish provides 2 special Whim effects. Within 30 mins of use, continuously recover Hp when Sanity is full.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Stardust Mining Platform",
+      "Type": "Prospector",
+      "Category": "Gathering",
+      "Specialization": "New Facility: Stardust Mining Platform",
+      "Effects": "Increase Mining yield by 20%\nCan mine Stardust when in a Pollution Zone.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Stardust Regulator",
+      "Type": "Master Craftsman",
+      "Category": "Tier",
+      "Specialization": "New Formula: Stardust Regulator",
+      "Effects": "Recover 70% of HP immediately and\ngain a Shield equal to 30% Max HP.\nThis has a 30s cooldown\n(independent of Activators' cooldowns)\nand can be used up to 15 times.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Stardust Water Pumps",
+      "Type": "Hydro Engineer",
+      "Category": "Control",
+      "Specialization": "New Facility: Stardust Water Pump",
+      "Effects": "A special Water Pump that, when supplied with\nenough power, can extract Stardust Source\nfrom polluted soil.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Stone Structures: Intense Defense",
+      "Type": "Tinkerer",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Stone Structures",
+      "Effects": "Structures built from stone gain the\nIntense Defense effect, Durability +10-,\nand the maximum number of\nStructural items that can be placed in\nyour Territory at any one time +100.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Stove: Long-Term Storage",
+      "Type": "Star Chef",
+      "Category": "Control",
+      "Specialization": "Facility Boost: Stove",
+      "Effects": "Doubles the shelf life of Dishes you cook yourself.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Sulfur Alchemy",
+      "Type": "Demolition Expert",
+      "Category": "Tier",
+      "Specialization": "New Formula: Sulfur Alchemy",
+      "Effects": "Slowly turn Acid into Sulfur using the\nSynthesis Bench.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Sulfur Chemist",
+      "Type": "Demolition Expert",
+      "Category": "Crafting",
+      "Specialization": "Unlock New Formula: Sulfur Chemist",
+      "Effects": "Can use Sulfur and Energy Link at the\nSynthesis Bench to slowly produce acid.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Super Refinery",
+      "Type": "Smelter",
+      "Category": "Gathering",
+      "Specialization": "New Facility: Super Refinery",
+      "Effects": "Transform Acid into Portable Mixed\nFuel more efficiently.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Supplies Workbench: Ammo Factory",
+      "Type": "Master Craftsman",
+      "Category": "Tier",
+      "Specialization": "Facility Boost: Supplies Workbench",
+      "Effects": "Crafting Output +50% when crafting regular Ammunition.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Supplies Workbench: Anti-Armor",
+      "Type": "Master Craftsman",
+      "Category": "Tier",
+      "Specialization": "Facility Boost: Supplies Workbench",
+      "Effects": "Yield +30% when crafting AP Ammo,\nand Crafting Speed -50%.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Supplies Workbench: Forest Hunter",
+      "Type": "Master Craftsman",
+      "Category": "Crafting",
+      "Specialization": "Improved Formula: Supplies Workbench",
+      "Effects": "Crossbow Bolt output +50% and crafting time -50%",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Supplies Workbench: Healing Boost",
+      "Type": "Master Craftsman",
+      "Category": "Tier",
+      "Specialization": "Facility Boost: Supplies Workbench",
+      "Effects": "HP Recovery +10% when crafting\nActivators,and Output +1.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Support Module",
+      "Type": "Legendary Rosetta",
+      "Category": "Building",
+      "Specialization": "Unlock new formula: Support Module",
+      "Effects": "A special item to enhance drones and unlock their advanced capabilities.\n\n\nGathering Drone: Every 30 seconds, transforms some ores in your Backpack into corresponding metal ingots (does not consume Fuel or Acid).\nFirepower Drone: Unlocks a healing skill for the Drone, which heals an allied Meta with the lowest HP within range. If a Meta is downed, they will be revived if not black out within 10 seconds.\nExploration Drone: You will enter Stealth after exiting combat.\nTerritory Drone: When you're in your Territory, recover 5% HP per second. If your HP falls below 50%, you will enter Stealth (the effect has a cooldown of 30 seconds).",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Synthesis Bench: Recycle & Reuse",
+      "Type": "Master Craftsman",
+      "Category": "Tier",
+      "Specialization": "Facility Boost: Synthesis Bench",
+      "Effects": "When Tactical Items like Drones and Machine Gun Towers are crafted using the Synthesis Bench, Usage Count +1.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Throwing Dagger: Bullseye",
+      "Type": "Demolition Expert",
+      "Category": "Tier",
+      "Specialization": "Improved Formula: Throwing Dagger",
+      "Effects": "Throwing Dagger +30% DMG. After killing an\nenemy with a Throwing Dagger,the next throw +100% DMG.",
+      "Level": "5, 10, 15"
+  },
+  {
+      "Icon": "",
+      "Name": "Ultra Grenade",
+      "Type": "Demolition Expert",
+      "Category": "Tier",
+      "Specialization": "New Formula: Ultra Grenade",
+      "Effects": "Higher Blast DMG, and additional\nbonus DMG against buildings and vehicles.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Updraft Device: Gravity Lite",
+      "Type": "Tinkerer",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Updraft Device",
+      "Effects": "Gravity is reduced around the Updraft<>Cannon, and Movement Speed is increased for 5s",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Water Pump: Underground Pump",
+      "Type": "Hydro Engineer",
+      "Category": "Management",
+      "Specialization": "Unlock New Formula: Icebreaker Water Pump",
+      "Effects": "You can install it on an ice surface or water surface to break the ice and gather the resources below.",
+      "Level": "40, 45, 50"
+  },
+  {
+      "Icon": "",
+      "Name": "Wide-Area Module",
+      "Type": "Legendary Rosetta",
+      "Category": "Crafting",
+      "Specialization": "Unlock new formula: Wide-Area Module",
+      "Effects": "A special item to enhance drones and unlock their advanced capabilities.\n\n\nGathering Drone: Doubles the yield when gathering ore. The Drone destroys all gatherable items within a 3-meter radius.\nFirepower Drone: Enables Attacks to trigger Bounce.\nExploration Drone: Significantly increases horizontal gliding speed and grants 20% DMG Reduction while gliding\nTerritory Drone: When in your Territory, the Drone gains a spherical shield every 30 seconds that is capable of absorbing damage equal to 5,000% of its Attack.",
+      "Level": "20, 25, 30, 35"
+  },
+  {
+      "Icon": "",
+      "Name": "Wood Structures: Tough Plant",
+      "Type": "Tinkerer",
+      "Category": "Building",
+      "Specialization": "Facility Boost: Wood Structures",
+      "Effects": "Structures built from wood gain the\nTough Plant effect, and Durability +150.",
+      "Level": "5, 10, 15"
   }
 ]
