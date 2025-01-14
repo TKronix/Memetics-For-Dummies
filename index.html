@@ -7,10 +7,11 @@
   <title>Memetic Specializations</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/i18next@20.0.0/dist/umd/i18next.min.js"></script>
 </head>
 
 <body>
-  <div class="header">Memetic Specializations</div>
+  <div class="header" ondblclick="makeEditable(this)">Memetic Specializations</div>
   <div class="selection-menu" id="selection-menu">
     <div class="selection-header">
       <label class="select-memetics-label">Select Memetics:</label>
@@ -46,802 +47,10 @@
       "Master Craftsman": "fas fa-tools",
       "Demolition Expert": "fas fa-bomb",
       "Tinkerer": "fas fa-gears",
-      "Artillery Marshal": "fas fa-jet-fighter"
+      "Artillery Marshal": "fas fa-jet-fighter",
+      "Legendary Mayfly": "fas fa-dragon",
+      "Legendary Rosetta": "fas fa-poo-storm"
     };
-    const OfflineMemetics = [
-      {
-        Icon: "",
-        Name: "Gravel and Log On-the-Go",
-        Type: "Prospector",
-        Category: "Gathering",
-        Specialization: "New Formula: Gravel and Log On-the-Go",
-        Effects: "When in your backpack, it reduces the weight of Logs, Gravels, and Ores you carry by 40% - 80%",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Pickaxe: Moonlight Mining",
-        Type: "Prospector",
-        Category: "Gathering",
-        Specialization: "Improved Formula: Pickaxe",
-        Effects: "When using the Pickaxe for Mining, increase the yield of Copper, Tin, Iron, Aluminum, and Tungsten Ore by 25%. Effect doubles at night (21:00 - 06:00)",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Pickaxe: Forest Foe",
-        Type: "Prospector",
-        Category: "Gathering",
-        Specialization: "Improved Formula: Pickaxe",
-        Effects: "Pickaxe Durability is doubled. +30% yield when logging with the Pickaxe, and gain 150% of the resources when you completely destroy a tree",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Super Refinery",
-        Type: "Smelter",
-        Category: "Gathering",
-        Specialization: "New Facility: Super Refinery",
-        Effects: "Transform Acid into Portable Mixed Fuel more efficiently",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Furnace: Precision Refining",
-        Type: "Smelter",
-        Category: "Gathering",
-        Specialization: "Facility Boost: Furnace",
-        Effects: "Resource Consumption -30%, and Smelting Time -30% when smelting Copper, Bronze, Steel, Aluminum, and Tungsten Ingots using a Furnace or Electric Furnace",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Disassembly Bench: Careful Disassembly",
-        Type: "Smelter",
-        Category: "Gathering",
-        Specialization: "Facility Boost: Disassembly Bench",
-        Effects: "Yield +30% when disassembling Parts, Fabrics, and Plastic",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Jump Booster",
-        Type: "Machinist",
-        Category: "Crafting",
-        Specialization: "New Formula: Jump Booster",
-        Effects: "Use to gain the double jump ability for 30 seconds. Can use up to 5 times",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Electronics Grabber",
-        Type: "Machinist",
-        Category: "Crafting",
-        Specialization: "New Formula: Electronics Grabber",
-        Effects: "When in your backpack, there is a small to medium chance to receive additional electronic modules when opening a Storage Crate",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Disassembly Bench: Electronic Recycling",
-        Type: "Machinist",
-        Category: "Crafting",
-        Specialization: "Facility Boost: Disassembly Bench",
-        Effects: "Yield +50% for Metal Scrap and Electronic Parts",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Explosive Sack",
-        Type: "Demolition Expert",
-        Category: "Crafting",
-        Specialization: "New Formula: Explosive Sack",
-        Effects: "When in your backpack, there is a 30% - 60% chance to salvage Explosive Compound after using High-Explosive Grenades, Shrapnel Grenades, and Simple Explosives. There is a 30% - 60% chance to salvage Sulfur after using Molotov Cocktails and Thermite Grenades",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Explosive On-the-Go",
-        Type: "Demolition Expert",
-        Category: "Crafting",
-        Specialization: "New Formula: Explosive On-the-Go",
-        Effects: "When in your backpack, reduce the weight of Grenades, Molotov Cocktails, High Explosives, Shrapnel Grenades, Thermite Grenades, Rocket Launcher Rockets, and Grenade Launcher Grenades by 30% - 60%. After using a throwable, increase Sprint Speed by 20% for 2s",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Throwing Dagger: Bullseye",
-        Type: "Demolition Expert",
-        Category: "Crafting",
-        Specialization: "Improved Formula: Throwing Dagger",
-        Effects: "Throwing Dagger +30% DMG. After killing an enemy with a Throwing Dagger, the next throw +100% DMG",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Backpack Expansion",
-        Type: "Master Craftsman",
-        Category: "Crafting",
-        Specialization: "New Formula: Backpack Expansion",
-        Effects: "When in your backpack, increase Max Load by 40 - 80",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Supplies Workbench: Ammo Factory",
-        Type: "Master Craftsman",
-        Category: "Crafting",
-        Specialization: "Facility Boost: Supplies Workbench",
-        Effects: "Supplies Workbench Crafting Output +50% when crafting regular Ammunition",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Gear Workbench: Customization",
-        Type: "Master Craftsman",
-        Category: "Crafting",
-        Specialization: "Gear Workbench",
-        Effects: "Weapons and Armor crafted using the Gear Workbench have +30% Max Durability",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Harvesting Sickle",
-        Type: "Child of the Earth",
-        Category: "Management",
-        Specialization: "New Formula: Harvesting Sickle",
-        Effects: "When in your backpack, there is a 20% - 40% chance to double the yield when gathering in the wilderness",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Compost Bin",
-        Type: "Child of the Earth",
-        Category: "Management",
-        Specialization: "New Formula: Compost Bin",
-        Effects: "When in your backpack, if there is Spoiled Food in your Backpack, 1 - 3 Spoiled Foods will be consumed every 10 - 5 minutes, and be turned into Mushrooms or random Fertilizer",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Gardening Gloves",
-        Type: "Child of the Earth",
-        Category: "Management",
-        Specialization: "New Formula: Gardening Gloves",
-        Effects: "When in your backpack, there is a 6% - 12% chance to double the seeds when acquiring plant seeds",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Activated Carbon Filter",
-        Type: "Hydro Engineer",
-        Category: "Management",
-        Specialization: "New Formula: Activated Carbon Filter",
-        Effects: "When in your backpack, when gathering water with a flask, there is a 30% chance to receive Boiled or Pure Water",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Portable Rainwater Collection System",
-        Type: "Hydro Engineer",
-        Category: "Management",
-        Specialization: "New Formula: Portable Rainwater Collection System",
-        Effects: "When in your backpack, slowly recover Hydration, and a 30% - 60% chance to receive 1 Dirty Water, Pure Water, or Acid every minute when it rains",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Portable Diving Gear",
-        Type: "Hydro Engineer",
-        Category: "Management",
-        Specialization: "New Forumula: Portable Diving Gear",
-        Effects: "When in your backpack, increase Oxygen by 40% - 100% and Swimming Speed by 20% - 40% when dving",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Chef's Knife",
-        Type: "Star Chef",
-        Category: "Management",
-        Specialization: "New Formula: Chef's Knife",
-        Effects: "When in your backpack, Meat yield +1 when Field Dressing animals, with a 30% - 60% chance to yield additional byproducts",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Stove: Long-Term Storage",
-        Type: "Star Chef",
-        Category: "Management",
-        Specialization: "Facility Boost: Stove",
-        Effects: "Doubles the shelf life of Dishes you cook yourself",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Roasted & Dried: Low and Slow",
-        Type: "Star Chef",
-        Category: "Management",
-        Specialization: "Improved Formula: Roasted",
-        Effects: "Roasted and Dried Dishes now provide +15 Energy, and +10% Sanity",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Custom Storage Crate",
-        Type: "Tinkerer",
-        Category: "Building",
-        Specialization: "New Facility: Custom Storage Crate",
-        Effects: "A large Storage Crate with 64 item slots",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Wood Structures: Tough Plant",
-        Type: "Tinkerer",
-        Category: "Building",
-        Specialization: "Facility Boost: Wood Structures",
-        Effects: "Structures built from wood gain the Tough Plant effect, and durability +150%",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Bed: A Place to Call Home",
-        Type: "Tinkerer",
-        Category: "Building",
-        Specialization: "Facility Boost: Bed",
-        Effects: "Sleep for more then 10s to cure all disease and reduce Stamina depletion for the next 10 minutes",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Basic Defense: Battle-Hardened",
-        Type: "Artillery Marshal",
-        Category: "Building",
-        Specialization: "Facility Boost: Basic Defense",
-        Effects: "Sandbags, Shelters, and High Fortifications gain the Battle-Hardened effect, Durability +100%. When your Territory exits combat, Durability recovers to 100%",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Flamethrower Trap: Scorching Blast",
-        Type: "Artillery Marshal",
-        Category: "Building",
-        Specialization: "Facility Boost: Flamethrower Trap",
-        Effects: "Flamethrower Trap DMG +30%. When the Flamethrower Trap kills an enemy, an explosion is triggered, dealing AoE Blast DMG to all nearby units (1s cooldown)",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Robotics Facility: Skilled Mechanician",
-        Type: "Artillery Marshal",
-        Category: "Building",
-        Specialization: "Facility Boost: Robotics Facility",
-        Effects: "Increase the Durability of Traps and Rifle Turret type facilities by 50%",
-        Level: "5-15"
-      },
-      {
-        Icon: "",
-        Name: "Solar Drill",
-        Type: "Prospector",
-        Category: "Gathering",
-        Specialization: "New Formula: Solar Drill",
-        Effects: "The Solar Drill charges itself on sunny days. +15% - 40% yields of Copper, Tin, Iron, Aluminum, and Tungsten Ore",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Chainsaw: Chainsaw Horror Show",
-        Type: "Prospector",
-        Category: "Gathering",
-        Specialization: "Improved Formula: Chainsaw",
-        Effects: "Chainsaw Durability cap +50%, Attack Speed +30%, and Melee DMG +100%",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Electric Drill: Treasure Hunter",
-        Type: "Prospector",
-        Category: "Gathering",
-        Specialization: "Improved Formula: Electric Drill",
-        Effects: "+100% yield when mining for Gold, Silver, and Startrace Ore with an Electric Drill",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Oil Processing",
-        Type: "Smelter",
-        Category: "Gathering",
-        Specialization: "New Formula: Stardust Source",
-        Effects: "Turn Stardust Ore and Portable Mixed Fuel into Stardust Source using the Electric Furnace",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Precious Metal Refining",
-        Type: "Smelter",
-        Category: "Gathering",
-        Specialization: "New Formula: Gold Ingot, Silver Ingot",
-        Effects: "Smelt gold and silver ores into ingots using the electric furnace. Gold ingot can be sold for 12k energy links, silver sold for 6k energy links",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Electric Furnace: Efficiency Lover",
-        Type: "Smelter",
-        Category: "Gathering",
-        Specialization: "Facility Boost: Electric Furnace",
-        Effects: "Electric Furnace Power Consumption -50%, and Crafting Time -60%",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Portable Updraft Device",
-        Type: "Machinist",
-        Category: "Crafting",
-        Specialization: "New Formula: Portable Updraft Device",
-        Effects: "Use to temporarily summon an updraft at the location for 30s. When inside the updraft, jump height is increased. Can use up to 10 times",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Combo Chipset",
-        Type: "Machinist",
-        Category: "Crafting",
-        Specialization: "New Formula: Combo Chipset",
-        Effects: "Turn Electronic Parts, Metal Scrap, and Parts into the Combo Chipset using the Supplies Workbench. Can be sold for 12k energy links",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Portable MG Turret: Barrage of Bullets",
-        Type: "Machinist",
-        Category: "Crafting",
-        Specialization: "Improved Formula: Portable MGTurret",
-        Effects: "Firing the MG Turret can trigger the Bounce effect, increasing HP and DMG by 30%. The MG Turret is now a reusable item, with up to 5 uses max",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Sulfur Chemist",
-        Type: "Demolition Expert",
-        Category: "Crafting",
-        Specialization: "Unlock New Formula: Sulfur Chemist",
-        Effects: "Can use Sulfur and Energy Links at the Synthesis Bench to slowly produce Acid",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Explosive Throwables: Echo Blast",
-        Type: "Demolition Expert",
-        Category: "Crafting",
-        Specialization: "Improved Formula: Explosive Throwables",
-        Effects: "Increase the DMG of High-Explosive Grenades, Shrapnel Grenades, Molotov Cocktails, and Thermite DMG by 30%. The first target killed will trigger 1 extra explosion, dealing damage equal to 400% Psi Intensity",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Claymore Mine: Warrior's Resolve",
-        Type: "Demolition Expert",
-        Category: "Crafting",
-        Specialization: "Improved Formula: Claymore Mine",
-        Effects: "Claymore Mine deals an additional 4000 + 400% Psi Intensity damage and increases Max HP by 400% Psi Intensity",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Synthesis Bench: Recycle & Reuse",
-        Type: "Master Craftsman",
-        Category: "Crafting",
-        Specialization: "Facility Boost: Synthesis Bench",
-        Effects: "When crafting Drones, Turrets, Stardust Shields, Spectrum Generators, and Projection Generators, increase their use count by 1",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Supplies Workbench: Healing Boost",
-        Type: "Master Craftsman",
-        Category: "Crafting",
-        Specialization: "Facility Boost: Supplies Workbench",
-        Effects: "HP Recovery +10% when crafting Activators, and Output +1",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Adrenaline Shot: Phoenix",
-        Type: "Master Craftsman",
-        Category: "Crafting",
-        Specialization: "Improved Formula: Adrenaline Shot",
-        Effects: "Take less DMG for the first 10s after respawning, and slowly recover HP",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Improved Compound Fertilizer",
-        Type: "Child of the Earth",
-        Category: "Management",
-        Specialization: "New Formula: Improved Compound Fertilizer",
-        Effects: "Crop fertilizer that can significantly enhance crop Mutation Rate and Yield, but will also slow down Growth",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Solar Generator: Photon Power",
-        Type: "Sparksmith",
-        Category: "Management",
-        Specialization: "Facility Boost: Solar Generator",
-        Effects: "Solar Generator Power Output +10w",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Biomass Generator: Sustained Output",
-        Type: "Sparksmith",
-        Category: "Management",
-        Specialization: "Facility Boost: Biomass Generator",
-        Effects: "Increase Biomass Generator's power output by 5w, and fuel duration by 150%",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Generator: Electrical Expert",
-        Type: "Sparksmith",
-        Category: "Management",
-        Specialization: "Facility Boost: Generator",
-        Effects: "Maximum Number of Generators +1 ,and +2w Power Output",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Stardust Water Pump",
-        Type: "Hydro Engineer",
-        Category: "Management",
-        Specialization: "New Facility: Stardust Water Pump",
-        Effects: "A special Water Pump that can extract Stardust Source from polluted soil when supplied with enough power",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Portable Fridge",
-        Type: "Star Chef",
-        Category: "Management",
-        Specialization: "New Formula: Portable Fridge",
-        Effects: "When in your backpack, reduce the spoilage speed of Food in your backpack by 70% - 90%",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Iced Treat: Brain Freeze",
-        Type: "Star Chef",
-        Category: "Management",
-        Specialization: "Improved Formula: Iced Treat",
-        Effects: "Iced Treat Effect Duration +200%, and Potency +30%",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Canned Goods: Mini Canner",
-        Type: "Star Chef",
-        Category: "Management",
-        Specialization: "Improved Formula: Canned Goods",
-        Effects: "+1 Yield when crafting Canned Goods",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Stone Structures: Intense Defense",
-        Type: "Tinkerer",
-        Category: "Building",
-        Specialization: "Facility Boost: Stone Structures",
-        Effects: "Structures built from stone gain the Intense Defense effect: Durability +100%,  and the maximum number of Structural items that can be placed in your Territory at any one time +100",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Furnace: Sintering",
-        Type: "Tinkerer",
-        Category: "Building",
-        Specialization: "Facility Boost: Furnace",
-        Effects: "Sintered Brick and Glass Crafting Time -50%, Yield +100%",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Updraft Cannon: Gravity Lite",
-        Type: "Tinkerer",
-        Category: "Building",
-        Specialization: "Facility Boost: Updraft Cannon",
-        Effects: "Gravity is reduced around the Updraft Cannon, and Movement Speed is increased for 5s",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Biomass Missile: Ample Munition",
-        Type: "Artillery Marshal",
-        Category: "Building",
-        Specialization: "Improved Formula: Biomass Missile",
-        Effects: "Plasma Missiles -80% Weight, and +2 Crafting Yield",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Gravitational Grip: Bonds of Guidance",
-        Type: "Artillery Marshal",
-        Category: "Building",
-        Specialization: "Facility Boost: Gravitational Grip",
-        Effects: "When the Gravitational Grip trap is triggered by enemy, there's a 20% chance that it will also inflict \"The Bull's Eye\"",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Shotgun Turret: Volley Fire",
-        Type: "Artillery Marshal",
-        Category: "Building",
-        Specialization: "Facility Boost: Shotgun Turret",
-        Effects: "Shotgun Turret DMG +30%. Power Consumption -30%, with a 30% chance to trigger the shrapnel effect",
-        Level: "20-35"
-      },
-      {
-        Icon: "",
-        Name: "Gold Pickaxe and Silver Pickaxe",
-        Type: "Prospector",
-        Category: "Gathering",
-        Specialization: "New Formula: Gold Axe, Silver Axe",
-        Effects: "Gold and Silver Pickaxes have low durability. When using the Gold Pickaxe for mining, there is a chance to receive Spice. When using the Silver Pickaxe for logging, there is a chance to receive a random Fruit",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Lucky Logging Platform",
-        Type: "Prospector",
-        Category: "Gathering",
-        Specialization: "New Facility: Lucky Logging Platform",
-        Effects: "Able to receive random agricultural produce when in a sunny area",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Stardust Mining Platform",
-        Type: "Prospector",
-        Category: "Gathering",
-        Specialization: "New Facility: Stardust Mining Platform",
-        Effects: "Increase Mining yield by 20%. Can mine Stardust when in a Pollution Zone",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Art of Stardust Decay",
-        Type: "Smelter",
-        Category: "Gathering",
-        Specialization: "New Formula: Art of Stardust Decay",
-        Effects: "Consume Stardust Source to craft Acid using the Electric Furnace",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Crystal Transformation",
-        Type: "Smelter",
-        Category: "Gathering",
-        Specialization: "New Formula: Beryllium Crystal, Vanadium Crystal, Iridium Crystal, Platinum Crystal",
-        Effects: "Turn Stardust Source and alloy ingots into various types of Crystals at the Electric Furnace",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Electric Furnace: Electrolysis",
-        Type: "Smelter",
-        Category: "Gathering",
-        Specialization: "Facility Boost: Electric Furnace",
-        Effects: "Doubles Yield when smelting Aluminum and Tungsten Ingots using the Electric Furnace",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Spectral Cloak",
-        Type: "Machinist",
-        Category: "Crafting",
-        Specialization: "New Formula: Spectral Cloak",
-        Effects: "Activate to become cloaked for 120s. Upon leaving combat, you'll become steathy. Use up to 10 times",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Scout Drone: Invisible Hunter",
-        Type: "Machinist",
-        Category: "Crafting",
-        Specialization: "Improved Formula: Scout Drone",
-        Effects: "Scout Drones gain The Bull's Eye effect, +30% HP and DMG. Scout drones can also now be used up to 5 times",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Stardust Barrier: Hold the Line",
-        Type: "Machinist",
-        Category: "Crafting",
-        Specialization: "Improved Formula: Stardust Barrier",
-        Effects: "Stardust Barriers +50% HP. When the Stardust Barrier is deployed, it replenishes 50% HP for all allies within 3m. Stardust Barriers can also now be used 5 times",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Golden Knife",
-        Type: "Demolition Expert",
-        Category: "Crafting",
-        Specialization: "New Formula: Golden Knife",
-        Effects: "A throwing knife with extremely high damage that is made from gold. When it hits an enemy, it will trigger the Unstable Bomber effect. When it hits the Weakspot of a Deviant, trigger 1 additional Unstable Bomber effect",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "High Power Warhead",
-        Type: "Demolition Expert",
-        Category: "Crafting",
-        Specialization: "New Formula: High Power Warhead",
-        Effects: "A high-efficency Rocket Launcher warhead. It's lighter and deals more damage to buildings and vehicles",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Ultra Grenade",
-        Type: "Demolition Expert",
-        Category: "Crafting",
-        Specialization: "New Formula: Ultra Grenade",
-        Effects: "Higher Blast DMG, and additional bonus DMG against buildings and vehicles",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Rare Crystal Set",
-        Type: "Master Craftsman",
-        Category: "Crafting",
-        Specialization: "New Formula: Rare Crystal Set",
-        Effects: "Turn Crystals into the Rare Crystal Set with the Electric Furnace. The Rare Crystal Set can be sold for 12k energy links",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Stardust Regulator",
-        Type: "Master Craftsman",
-        Category: "Crafting",
-        Specialization: "New Formula: Stardust Regulator",
-        Effects: "Recover 70% of HP immediately and gain a Shield equal to 30% Max HP. This has a 30s cooldown (independent of activators' cooldowns) and can be used up to 15 times",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Supplies Workbench: Anti-Armor",
-        Type: "Master Craftsman",
-        Category: "Crafting",
-        Specialization: "Facility Boost: Supplies Workbench",
-        Effects: "Yield +30% when crafting AP Ammo, and Crafting Time -50%",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Hydraulic Generator: One with the Tides",
-        Type: "Sparksmith",
-        Category: "Management",
-        Specialization: "Facility Boost: Hydraulic Generator",
-        Effects: "Maximum number of Generators +1. Power Output +0-7w, depending on the speed of water flow",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Deviant Power Generator: Stardust Unleashed",
-        Type: "Sparksmith",
-        Category: "Logistics",
-        Specialization: "Facility Boost: Deviant Power Generator",
-        Effects: "Increase Deviant Power Generator's power output by 15%",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Lightning Impulse Regulator",
-        Type: "Sparksmith",
-        Category: "Management",
-        Specialization: "New Formula: Lightning Impulse Regulator",
-        Effects: "When in your backpack, being struck by lightning restores your HP to full and grants Movement Speed +15% and Psi Intensity +30% for 60s",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Nalcott Easter Egg",
-        Type: "Star Chef",
-        Category: "Management",
-        Specialization: "New Formula: Nalcott Perk",
-        Effects: "Use to randomly receive the contents of a Settlement Loot Crate",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Kitchen Set: Gourmand",
-        Type: "Star Chef",
-        Category: "Management",
-        Specialization: "Facility Boost: Kitchen Set",
-        Effects: "Base effects of all Dishes +30% when prepared using a Kitchen Set. Effect Duration +50% and crafting time -50%",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Stardust Dish: Shell Break",
-        Type: "Star Chef",
-        Category: "Logistics",
-        Specialization: "Improved Formula: Stardust Dish",
-        Effects: "The Stardust Dish provides 2 special Whim effects. Within 30 minutes of use, continuously recover HP when Sanity is full",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Gatling Cannon: Power Blast",
-        Type: "Artillery Marshal",
-        Category: "Building",
-        Specialization: "Facility Boost: Gatling Cannon",
-        Effects: "Gatling Cannons deal +30% DMG. When your territory exits combat, Durability recovers to 100%",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Pulse Power Device",
-        Type: "Sparksmith",
-        Category: "Management",
-        Specialization: "New Formula: Pulse Power Device",
-        Effects: "When in your backpack, recover all HP, increase Movement Speed by 15% and Psi Intensity by 30% for 60s when struck by lightning during rainstorms",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Red Plasma Rounds",
-        Type: "Artillery Marshal",
-        Category: "Building",
-        Specialization: "New Formula: Red Plasma Rounds",
-        Effects: "Special ammunition used by Gatling Cannons. They are extremely expensive but overwhelmingly powerful. There is no bullet drop in its trajectory, deals tons of damage, and has a large explosive radius. 24 hour duration",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Reinforced Structures: Healing Defense",
-        Type: "Tinkerer",
-        Category: "Building",
-        Specialization: "Facility Boost: Reinforced Structures",
-        Effects: "Reinforced structures gain the Healing Defense effect. When your Territory exits combat, the Durability of reinforced structures is automatically restored to 80%",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Rifle Turrent: Two Birds One Stone",
-        Type: "Artillery Marshal",
-        Category: "Building",
-        Specialization: "Facility Boost: Rifle Turret",
-        Effects: "Rifle Turret DMG +30%, Durability +30%, and attacks on target trigger a Bounce effect",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Silver Plasma Missiles",
-        Type: "Artillery Marshal",
-        Category: "Building",
-        Specialization: "New Formula: Silver Plasma Missiles",
-        Effects: "A special type of ammunition for the Gatling Cannon. Costly to produce but delivers very high DMG. Bullets fly in a perfectly straight trajectory, and deliver very high Blast DMG across a large radius",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Stardust Byproducts",
-        Type: "Smelter",
-        Category: "Gathering",
-        Specialization: "New Formula: Acid",
-        Effects: "Consume Stardust Source to craft Acid using the Electric Furnace",
-        Level: "40-50"
-      },
-      {
-        Icon: "",
-        Name: "Stardust Delicacy",
-        Type: "Star Chef",
-        Category: "Management",
-        Specialization: "Improved Formula: Stardust Delicacy",
-        Effects: "Dishes infected with Stardust no longer reduce Sanity. Instead, they will instantly restore full Sanity and also grant 2 random Whims",
-        Level: "40-50"
-      }
-    ];
 
     const dataUrl = 'https://tkronix.github.io/Memetics-For-Dummies/data/specializations.json';
     let memetics = [];
@@ -856,16 +65,13 @@
           Effects: row.Effects,
           Level: row.Level
         }));
+        console.log("Memetics loaded from file");
         console.log(memetics);
         loadSelectionFromURL();
         createCheckboxes();
       })
       .catch(error => {
         console.error('Error fetching the data:', error);
-        memetics = OfflineMemetics;
-        console.log(memetics);
-        loadSelectionFromURL();
-        createCheckboxes();
       });
 
     let selectedMemetics = new Set();
@@ -912,12 +118,24 @@
     function updateURL() {
       const selectedArray = Array.from(selectedMemetics);
       const url = new URL(window.location.href);
-      url.searchParams.set('selected', selectedArray.join(','));
+      if (selectedArray.length > 0) {
+        url.searchParams.set('selected', selectedArray.join(','));
+      }
+      else {
+        url.searchParams.delete('selected', selectedArray.join(','));
+      }
+
       window.history.pushState({}, '', url);
     }
 
     function loadSelectionFromURL() {
       const urlParams = new URLSearchParams(window.location.search);
+      //Header Text loading
+      const headerText = urlParams.get('n');
+      if (headerText) {
+        document.querySelector('.header').innerText = headerText; // Set the header text from the URL
+      }
+      //Selected Memetics Loading
       const selected = urlParams.get('selected');
       if (selected) {
         console.log(selected);
@@ -935,6 +153,44 @@
       createCheckboxes();
     }
 
+    const levelShadeCache = {
+      '5, 10, 15': 'rgb(40, 40, 40)',
+      '20, 25, 30, 35': 'rgb(32, 32, 32)',
+      '40, 45, 50': 'rgb(26, 26, 26)',
+    };
+
+    // Example usage in getPanelShade function
+    function getPanelShade(levels) {
+      if (!levelShadeCache[levels]) {
+        // If the specific levels combination isn't pre-cached, add a default or error handling
+        console.error(`Shade for levels "${levels}" not found in cache!`);
+        return 'rgb(41, 41, 41)'; // Default to white or any other fallback color
+      }
+
+      console.log(`Levels: ${levels}, Shade: ${levelShadeCache[levels]}`); // Debug log
+
+      return levelShadeCache[levels];
+    }
+
+    function setMaxTitleHeight() {
+      const titles = document.querySelectorAll('.title');
+      let maxHeight = 0;
+    
+      // Calculate the maximum height of all titles
+      titles.forEach(title => {
+        title.style.height = 'auto'; // Reset height to get the natural height
+        const height = title.offsetHeight;
+        if (height > maxHeight) {
+          maxHeight = height;
+        }
+      });
+    
+      // Set the maximum height to all titles
+      titles.forEach(title => {
+        title.style.height = `${maxHeight}px`;
+      });
+    }
+    
     function renderSelectedMemetics() {
       const container = document.getElementById('memetics-container');
       container.innerHTML = '';
@@ -942,24 +198,35 @@
         const memetic = memetics[index];
         const panel = document.createElement('div');
         panel.className = 'panel';
+        const panelShade = getPanelShade(memetic.Level);
+        panel.style.backgroundColor = panelShade;
         const icon = memetic.Icon ? `<img src="${memetic.Icon}" alt="${memetic.Type} image">` : `<i class="${typeIcons[memetic.Type] || 'fas fa-cube'}"></i>`;
         panel.innerHTML = `
             <div class="icon">${icon}</div>
             <div class="title">${memetic.Name}</div>
             <div class="subtitle">${memetic.Type}</div>
             <div class="extra-info" style="display: ${showAllDetails ? 'block' : 'none'};">
-                <div class="specialization">Specialization: ${memetic.Specialization}</div> 
-                <div class="effects">Effects: ${memetic.Effects.replace(/\n/g, '<br>')}</div>
-                <div class="level">Level: ${memetic.Level}</div>
+                <div class="specialization"><strong>Specialization:</strong> ${memetic.Specialization}</div> 
+                <div class="effects"><strong>Effects:</strong> ${memetic.Effects.replace(/\n/g, '<br>')}</div>
+                <div class="level"><strong>Level:</strong> ${memetic.Level}</div>
             </div>
+            <div class="expand-btn" style="background-color: ${panelShade};">${showAllDetails ? 'Hide Details' : 'Show Details'}</div>
         `;
-        panel.onclick = function () {
+        const arrow = panel.querySelector('.expand-btn');
+        arrow.onclick = function () {
           const extraInfo = panel.querySelector('.extra-info');
           extraInfo.style.display = extraInfo.style.display === 'none' || extraInfo.style.display === '' ? 'block' : 'none';
           panel.classList.toggle('expanded');
-        };
+          arrow.innerHTML = arrow.innerHTML.includes('Show') ? 'Hide Details' : 'Show Details';
+        }
+        /*panel.onclick = function () {
+          const extraInfo = panel.querySelector('.extra-info');
+          extraInfo.style.display = extraInfo.style.display === 'none' || extraInfo.style.display === '' ? 'block' : 'none';
+          panel.classList.toggle('expanded');
+        };*/
         container.appendChild(panel);
       });
+      setMaxTitleHeight();
     }
 
     function toggleAllDetails() {
@@ -988,6 +255,33 @@
         .catch(err => {
           console.error('Failed to copy URL to clipboard: ', err);
         });
+    }
+
+    function makeEditable(element) {
+      element.setAttribute('contenteditable', 'true');
+      element.focus();
+      element.onblur = function () {
+        element.removeAttribute('contenteditable');
+
+        // Get the updated text
+        let updatedText = element.innerText.trim();
+
+        // Check if the updated text is empty or the default
+        if (!updatedText || updatedText === "Memetic Specializations") {
+          updatedText = "Memetic Specializations";
+          element.innerText = updatedText;
+
+          // Remove the 'n' parameter from the URL
+          const url = new URL(window.location.href);
+          url.searchParams.delete('n');
+          window.history.pushState({}, '', url);
+        } else {
+          // Update the URL with the new header text
+          const url = new URL(window.location.href);
+          url.searchParams.set('n', updatedText);
+          window.history.pushState({}, '', url);
+        }
+      };
     }
 
     renderSelectedMemetics();

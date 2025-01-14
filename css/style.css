@@ -34,15 +34,20 @@ body {
 }
 
 .panel {
-  background-color: #292929;
+  /*background-color: #292929;*/
   border: 1px solid #b8860b;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  display: grid;
+  display: flex;
   grid-template-rows: auto 1fr auto auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
 }
 
 .panel:hover {
@@ -57,6 +62,9 @@ body {
 
 .extra-info {
   display: none;
+  height: 200px;
+  max-height: 200px;
+  overflow-y: auto;
   margin-top: 10px;
   font-size: 14px;
   text-align: left;
@@ -64,6 +72,32 @@ body {
   padding: 10px;
   border-radius: 5px;
 }
+
+/* Firefox */
+.extra-info {
+  scrollbar-width: thin;
+  scrollbar-color: #b8860b #1a1a1a; /* thumb color, track color */
+}
+
+/* Webkit browsers (Chrome, Safari) */
+.extra-info::-webkit-scrollbar {
+  width: 8px;
+}
+
+.extra-info::-webkit-scrollbar-thumb {
+  background-color: #b8860b; /* thumb color */
+  border-radius: 4px;
+}
+
+.extra-info::-webkit-scrollbar-thumb:hover {
+  background-color: #d4af37; /* thumb hover color */
+}
+
+.extra-info::-webkit-scrollbar-track {
+  background-color: #1a1a1a; /* track color */
+  border-radius: 4px;
+}
+
 
 .icon {
   font-size: 48px;
@@ -75,6 +109,7 @@ body {
   font-weight: bold;
   margin: 10px 0;
   color: #d4af37;
+  align-content: center;
 }
 
 .subtitle {
@@ -180,4 +215,33 @@ body {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.expand-btn
+{
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  /*background-color: #292929;*/
+  color: #d4af37;
+  border: none;
+  border-top: 1px solid #b8860b;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.expand-btn:hover
+{
+  background-color: #444!important;
+}
+
+.effects
+{
+  margin-top: 5px;
+}
+
+.level
+{
+  margin-top: 5px;
 }
